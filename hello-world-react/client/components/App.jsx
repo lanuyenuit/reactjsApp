@@ -1,8 +1,24 @@
 import React from 'react';
-import Modal from 'react-modal';
-
+import ModalAddBook from './ModalAddBook.js';
 export default class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            clickAddBook: false,
+        }
+    }
+
+    addBook = () => {
+        this.setState({clickAddBook:true});
+    }
+
+    closeModal = () => {
+        this.setState({clickAddBook:false});
+    }
+
     render() {
+        let {clickAddBook} = _.clone(this.state);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -98,7 +114,9 @@ export default class App extends React.Component {
                 <div className="content-wrapper" style={{minHeight: "960px"}}>
                     <div className="box">
                         <div className="box-header">
-                            <button>Add new book</button>
+                            <button onClick={()=>this.addBook()}>Add new book</button>
+                            {clickAddBook &&
+                            <ModalAddBook closeModal={this.closeModal}/>}
                         </div>
                         <div className="box-body">
                             <div id="example2_wrapper" className="dataTables_wrapper form-inline dt-bootstrap">
@@ -122,7 +140,7 @@ export default class App extends React.Component {
                                                 </th>
                                                 <th className="sorting" tabindex="0" aria-controls="example2"
                                                     rowspan="1" colspan="1"
-                                                    aria-label="Platform(s): activate to sort column ascending">Name
+                                                    aria-label="Platform(s): activate to sort column ascending">Author
                                                 </th>
                                                 <th className="sorting" tabindex="0" aria-controls="example2"
                                                     rowspan="1" colspan="1"
@@ -138,7 +156,7 @@ export default class App extends React.Component {
                                                 <td>Win 98+ / OSX.2+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -148,7 +166,7 @@ export default class App extends React.Component {
                                                 <td>Win 98+ / OSX.2+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -158,7 +176,7 @@ export default class App extends React.Component {
                                                 <td>Win 98+ / OSX.2+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -168,7 +186,7 @@ export default class App extends React.Component {
                                                 <td>Win 2k+ / OSX.3+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -178,7 +196,7 @@ export default class App extends React.Component {
                                                 <td>OSX.2+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -188,7 +206,7 @@ export default class App extends React.Component {
                                                 <td>OSX.3+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -198,7 +216,7 @@ export default class App extends React.Component {
                                                 <td>Win 95+ / Mac OS 8.6-9.2</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -208,7 +226,7 @@ export default class App extends React.Component {
                                                 <td>Win 98SE+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -218,7 +236,7 @@ export default class App extends React.Component {
                                                 <td>Win 98+ / OSX.2+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
 
                                             </tr>
@@ -228,7 +246,7 @@ export default class App extends React.Component {
                                                 <td>Win 95+ / OSX.1+</td>
                                                 <td>
                                                     <button><i className="fa fa-edit"></i></button>
-                                                    <button><i class="fa fa-ban"></i></button>
+                                                    <button><i className="fa fa-ban"></i></button>
                                                 </td>
                                             </tr>
                                             </tbody>
