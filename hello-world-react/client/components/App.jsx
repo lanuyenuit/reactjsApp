@@ -1,6 +1,17 @@
 import React from 'react';
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        };
+    }
+
+    editListBook = () => {
+        alert("dsa");
+
+    };
+
     render() {
         return (
             <div className="wrapper">
@@ -97,7 +108,7 @@ export default class App extends React.Component {
                 <div className="content-wrapper" style={{minHeight: "960px"}}>
                     <div className="box">
                         <div className="box-header">
-                            <button>Add new book</button>
+                            <button onclick={()=>this.model()}>Add new book</button>
                         </div>
                         <div className="box-body">
                             <div id="example2_wrapper" className="dataTables_wrapper form-inline dt-bootstrap">
@@ -136,7 +147,7 @@ export default class App extends React.Component {
                                                 <td>Firefox 1.0</td>
                                                 <td>Win 98+ / OSX.2+</td>
                                                 <td>
-                                                    <button><i className="fa fa-edit"></i></button>
+                                                    <button onClick={()=>this.editListBook()}><i className="fa fa-edit"></i></button>
                                                     <button><i class="fa fa-ban"></i></button>
                                                 </td>
 
@@ -220,6 +231,24 @@ export default class App extends React.Component {
                                                     <button><i class="fa fa-ban"></i></button>
                                                 </td>
 
+                                            </tr>
+                                            <tr role="row" className="even">
+                                                <td className="sorting_1">10</td>
+                                                <td>Mozilla 1.0</td>
+                                                <td>Win 95+ / OSX.1+</td>
+                                                <td>
+                                                    <button><i className="fa fa-edit"></i></button>
+                                                    <button><i class="fa fa-ban"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr role="row" className="even">
+                                                <td className="sorting_1">10</td>
+                                                <td>Mozilla 1.0</td>
+                                                <td>Win 95+ / OSX.1+</td>
+                                                <td>
+                                                    <button><i className="fa fa-edit"></i></button>
+                                                    <button><i class="fa fa-ban"></i></button>
+                                                </td>
                                             </tr>
                                             <tr role="row" className="even">
                                                 <td className="sorting_1">10</td>

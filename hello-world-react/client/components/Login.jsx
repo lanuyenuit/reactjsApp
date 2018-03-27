@@ -1,16 +1,38 @@
 import React from 'react';
 import App from "./App.jsx";
+import _ from  'lodash';
+import swal from 'sweetalert';
 
 export default class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            user: {username: 'uyen', password: '123456'},
+            usernameTemp:'',
+            passwordTemp:'',
             toggleSignin: false
         };
     }
-    handleSignin = () =>  {
-        this.setState({toggleSignin: true});
+
+    handleUser = (e) => {
+        let userInput = e.target.value;
+        this.setState({usernameTemp: userInput});
     };
+
+    handlePassWord = (e) => {
+        let passInput = e.target.value;
+        this.setState({passwordTemp: passInput});
+    };
+
+    handleLogin = () =>  {
+
+        if (_.isEqual(this.state.user.username, this.state.usernameTemp) && _.isEqual(this.state.user.password, this.state.passwordTemp)) {
+            this.setState({toggleSignin: true});
+        }
+
+
+    };
+
     render() {
         let {toggleSignin} = this.state;
         return <div>
@@ -22,11 +44,13 @@ export default class Login extends React.Component {
                 <div className="login-box-body">
                     <p className="login-box-msg">Sign in to start your session</p>
 
-                    <form action="#" method="post">
+                    <form>
                         <div className="form-group has-feedback">
+                            <input type="text" className="form-control" placeholder="Email" onChange={(e)=>this.handleUser(e)}/>
+                            <span className="glyphicon glyphicon-envelope form-control-feedback"></span>
                         </div>
                         <div className="form-group has-feedback">
-                            <input type="password" className="form-control" placeholder="Password"/>
+                            <input type="password" className="form-control" placeholder="Password"  onChange={(e)=>this.handlePassWord(e)}/>
                             <span className="glyphicon glyphicon-lock form-control-feedback"></span>
                         </div>
                         <div className="row">
@@ -38,7 +62,7 @@ export default class Login extends React.Component {
                                 </div>
                             </div>
                             <div className="col-xs-4">
-                                <button type="submit" className="btn btn-primary btn-block btn-flat" onClick={()=>this.handleSignin()}>Sign In</button>
+                                <button type="submit" className="btn btn-primary btn-block btn-flat" onClick={()=>this.handleLogin()}>Sign In</button>
                             </div>
                         </div>
                     </form>
