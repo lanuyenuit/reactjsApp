@@ -1,11 +1,39 @@
 import React from 'react';
 import ModalAddBook from './ModalAddBook.js';
+
 export default class App extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             clickAddBook: false,
+            book : [
+                {
+                    id: 1,
+                    title: 'How to win friends and influences people',
+                    author: 'Dale Carnegie',
+                },
+                {
+                    id: 2,
+                    title: 'Who got your back',
+                    author: 'Keith Ferrazzi',
+                },
+                {
+                    id: 3,
+                    title: '7 habits of highly effective people',
+                    author: 'Stephen Covey',
+                },
+                {
+                    id: 4,
+                    title: 'Never eat alone',
+                    author: 'Keith Ferrazzi',
+                },
+                {
+                    id: 5,
+                    title: 'Predictably irrational',
+                    author: 'Dan',
+                }
+            ]
         }
     }
 
@@ -15,6 +43,22 @@ export default class App extends React.Component {
 
     closeModal = () => {
         this.setState({clickAddBook:false});
+    }
+
+    displayBookTable = () => {
+       return this.state.book.map((data, i) => {
+            return (
+                <tr key={i}>
+                    <td>{data.id}</td>
+                    <td>{data.title}</td>
+                    <td>{data.author}</td>
+                    <td>
+                        <button><i className="fa fa-edit"></i></button>
+                        <button><i className="fa fa-ban"></i></button>
+                    </td>
+                </tr>
+            )
+        })
     }
 
     render() {
@@ -42,7 +86,6 @@ export default class App extends React.Component {
                                         <li className="user-header">
                                             <img src="node_modules/admin-lte/dist/img/user2-160x160.jpg"
                                                  className="img-circle" alt="User Image"/>
-
                                             <p>
                                                 Alexander Pierce - Web Developer
                                                 <small>Member since Nov. 2012</small>
@@ -71,10 +114,8 @@ export default class App extends React.Component {
                                         </li>
                                     </ul>
                                 </li>
-
                             </ul>
                         </div>
-
                     </nav>
                 </header>
                 <aside className="main-sidebar">
@@ -98,7 +139,6 @@ export default class App extends React.Component {
                                         <i className="fa fa-angle-left pull-right"></i>
                                      </span>
                                 </a>
-
                             </li>
                             <li className="treeview menu-open">
                                 <a href="#">
@@ -150,105 +190,7 @@ export default class App extends React.Component {
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr role="row" className="odd">
-                                                <td className="sorting_1">1</td>
-                                                <td>Firefox 1.0</td>
-                                                <td>Win 98+ / OSX.2+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="even">
-                                                <td className="sorting_1">2</td>
-                                                <td>Firefox 1.5</td>
-                                                <td>Win 98+ / OSX.2+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="odd">
-                                                <td className="sorting_1">3</td>
-                                                <td>Firefox 2.0</td>
-                                                <td>Win 98+ / OSX.2+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="even">
-                                                <td className="sorting_1">4</td>
-                                                <td>Firefox 3.0</td>
-                                                <td>Win 2k+ / OSX.3+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="odd">
-                                                <td className="sorting_1">5</td>
-                                                <td>Camino 1.0</td>
-                                                <td>OSX.2+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="even">
-                                                <td className="sorting_1">6</td>
-                                                <td>Camino 1.5</td>
-                                                <td>OSX.3+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="odd">
-                                                <td className="sorting_1">7</td>
-                                                <td>Netscape 7.2</td>
-                                                <td>Win 95+ / Mac OS 8.6-9.2</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="even">
-                                                <td className="sorting_1">8</td>
-                                                <td>Netscape Browser 8</td>
-                                                <td>Win 98SE+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="odd">
-                                                <td className="sorting_1">9</td>
-                                                <td>Netscape Navigator 9</td>
-                                                <td>Win 98+ / OSX.2+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr role="row" className="even">
-                                                <td className="sorting_1">10</td>
-                                                <td>Mozilla 1.0</td>
-                                                <td>Win 95+ / OSX.1+</td>
-                                                <td>
-                                                    <button><i className="fa fa-edit"></i></button>
-                                                    <button><i className="fa fa-ban"></i></button>
-                                                </td>
-                                            </tr>
+                                            {this.displayBookTable()}
                                             </tbody>
                                         </table>
                                     </div>

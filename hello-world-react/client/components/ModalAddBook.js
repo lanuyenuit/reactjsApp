@@ -92,7 +92,7 @@ export default class ModalAddBook extends React.Component {
                                     </td>
 
                                 </tr>
-                                
+
                                 </tbody>
                             </table>
                         </div>
