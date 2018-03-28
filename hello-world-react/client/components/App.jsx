@@ -1,12 +1,17 @@
 import React from 'react';
 import ModalAddBook from './ModalAddBook.js';
+import _ from 'lodash'
 export default class App extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             clickAddBook: false,
-            book : [
+            valueTiTle: '',
+            valueAuthor: '',
+            objTerm1: {},
+            objTerm2: {},
+            book: [
                 {
                     id: 1,
                     title: 'How to win friends and influences people',
@@ -37,18 +42,18 @@ export default class App extends React.Component {
     }
 
     addBook = () => {
-        this.setState({clickAddBook:true});
-    }
+        this.setState({clickAddBook: true});
+    };
 
     closeModal = () => {
-        this.setState({clickAddBook:false});
-    }
+        this.setState({clickAddBook: false});
+    };
 
     displayBookTable = () => {
-       return this.state.book.map((data, i) => {
+        return this.state.book.map((data, i) => {
             return (
-                <tr key={i}>
-                    <td>{data.id}</td>
+                <tr key={i++}>
+                    <td>{i}</td>
                     <td>{data.title}</td>
                     <td>{data.author}</td>
                     <td>
@@ -58,10 +63,35 @@ export default class App extends React.Component {
                 </tr>
             )
         })
-    }
+    };
+
+
+    handleInputTitle = (e, field) => {
+        let input = e.target.value;
+        this.setState({
+            valueTiTle: {[field]: input}
+        });
+    };
+
+    handleInputAuthor= (e, field) => {
+        let input = e.target.value;
+        this.setState({
+            valueAuthor: {[field]: input}
+        });
+    };
+
+
+    addNewBook = () => {
+        let arrTemp = _.cloneDeep(this.state.book);
+        _.assign(this.state.objTerm1, this.state.valueTiTle);
+        _.assign(this.state.objTerm2, this.state.valueAuthor);
+       _.merge(this.state.objTerm1, this.state.objTerm2);
+       arrTemp.push(this.state.objTerm1);
+       this.setState({book: arrTemp, clickAddBook: false});
+    };
 
     render() {
-        let {clickAddBook} = _.clone(this.state);
+        let {clickAddBook, book} = _.clone(this.state);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -153,9 +183,15 @@ export default class App extends React.Component {
                 <div className="content-wrapper" style={{minHeight: "960px"}}>
                     <div className="box">
                         <div className="box-header">
-                            <button onClick={()=>this.addBook()}>Add new book</button>
+                            <button onClick={() => this.addBook()}>Add new book</button>
                             {clickAddBook &&
-                            <ModalAddBook closeModal={this.closeModal}/>}
+                            <ModalAddBook closeModal={this.closeModal}
+                                          handleInputTitle={this.handleInputTitle}
+                                          handleInputAuthor={this.handleInputAuthor}
+                                          addNewBook={this.addNewBook}
+                                          id={++_.last(book).id}
+                            />
+                            }
                         </div>
                         <div className="box-body">
                             <div id="example2_wrapper" className="dataTables_wrapper form-inline dt-bootstrap">

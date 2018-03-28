@@ -7,16 +7,15 @@ export default class ModalAddBook extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            clickCloseModal : false
+            clickCloseModal : false,
+            valueTitle: props.valueTiTle,
+            valueAuthor: props.valueAuthor
         };
-    }
-    closeModal = () => {
-        this.setState({clickCloseModal:true})
     }
 
 
     render() {
-        const {closeModal} = this.props
+        const {closeModal, handleInputTitle, handleInputAuthor, addNewBook,id} = this.props
         return (
         <div className="modal fade in" id="modal-default" style={{display: "block"}}>
             <div className="modal-dialog">
@@ -53,40 +52,22 @@ export default class ModalAddBook extends React.Component {
                                 </thead>
                                 <tbody>
                                 <tr role="row" className="odd">
-                                    <td className="sorting_1">1</td>
-                                    <td>Firefox 1.0</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td>
-                                        <button><i className="fa fa-edit"></i></button>
-                                        <button><i className="fa fa-ban"></i></button>
+                                    <td className="sorting_1">{id}</td>
+                                    <td><input type="text"
+                                               className="form-control"
+                                               id="addTitle"
+                                               placeholder="title"
+                                               value={this.state.valueTitle}
+                                               onChange={(e)=>handleInputTitle(e, 'title')}/>
                                     </td>
-
-                                </tr>
-                                <tr role="row" className="even">
-                                    <td className="sorting_1">2</td>
-                                    <td>Firefox 1.5</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td>
-                                        <button><i className="fa fa-edit"></i></button>
-                                        <button><i className="fa fa-ban"></i></button>
+                                    <td><input type="text"
+                                               className="form-control"
+                                               id="addAuthor"
+                                               placeholder="author"
+                                               value={this.state.valueAuthor}
+                                               onChange={(e)=>handleInputAuthor(e, 'author')}/>
                                     </td>
-
-                                </tr>
-                                <tr role="row" className="odd">
-                                    <td className="sorting_1">3</td>
-                                    <td>Firefox 2.0</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td>
-                                        <button><i className="fa fa-edit"></i></button>
-                                        <button><i className="fa fa-ban"></i></button>
-                                    </td>
-
-                                </tr>
-                                <tr role="row" className="even">
-                                    <td className="sorting_1">4</td>
-                                    <td>Firefox 3.0</td>
-                                    <td>Win 2k+ / OSX.3+</td>
-                                    <td>
+                                    <td style={{width: '14%'}}>
                                         <button><i className="fa fa-edit"></i></button>
                                         <button><i className="fa fa-ban"></i></button>
                                     </td>
@@ -98,9 +79,9 @@ export default class ModalAddBook extends React.Component {
                         </div>
                     </div>
                     <div className="modal-footer">
-                        <button type="button" className="btn btn-default pull-left" data-dismiss="modal" onClick={()=>closeModal()}>
+                        <button type="button" className="btn btn-default pull-left" data-dismiss="modal" onClick={closeModal}>
                             Close</button>
-                        <button type="button" className="btn btn-primary">Save changes</button>
+                        <button type="button" className="btn btn-primary" onClick={addNewBook}>Add</button>
                     </div>
                 </div>
             </div>
