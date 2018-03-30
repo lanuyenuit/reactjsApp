@@ -20,7 +20,11 @@ export default class ModalAddBook extends React.Component {
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={()=>closeModal()}>
+                        <button type="button"
+                                className="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                                onClick={()=>closeModal('clickAddBook')}>
                             <span aria-hidden="true">×</span></button>
                         <h4 className="modal-title">New Book</h4>
                     </div>
@@ -56,14 +60,13 @@ export default class ModalAddBook extends React.Component {
                                                className="form-control"
                                                id="addTitle"
                                                placeholder="title"
-                                               // value={this.state.valueTitle}
                                                onChange={(e)=>handleInputTitle(e, 'title')}/>
                                     </td>
                                     <td><input type="text"
                                                className="form-control"
                                                id="addAuthor"
                                                placeholder="author"
-                                               // value={this.state.valueAuthor}
+
                                                onChange={(e)=>handleInputAuthor(e, 'author')}/>
                                     </td>
                                     <td style={{width: '14%'}}>

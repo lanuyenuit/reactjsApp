@@ -12,8 +12,9 @@ export default class App extends React.Component {
             clickEditBook: false,
             valueTiTle: '',
             valueAuthor: '',
-            objTerm1: {},
-            objTerm2: {},
+            addID:'',
+            addTitle: {},
+            addAuthor: {},
             book: [
                 {
                     id: 1,
@@ -40,7 +41,11 @@ export default class App extends React.Component {
                     title: 'Predictably irrational',
                     author: 'Dan',
                 }
-            ]
+            ],
+            editOBJ: {},
+            textInput:'',
+            newEditOBJ:{},
+            toggleEditForm: false
         }
     }
 
@@ -48,8 +53,8 @@ export default class App extends React.Component {
         this.setState({clickAddBook: true});
     };
 
-    closeModal = () => {
-        this.setState({clickAddBook: false});
+    closeModal = (modalName) => {
+        this.setState({[modalName]: false});
     };
 
     displayBookTable = () => {
@@ -60,20 +65,25 @@ export default class App extends React.Component {
                     <td>{data.title}</td>
                     <td>{data.author}</td>
                     <td>
-                        <button onClick={()=>this.editBook(i)}><i className="fa fa-edit"/></button>
-                        <button onClick={()=>this.deleteBook(i)}><i className="fa fa-ban"/></button>
+                        <button onClick={()=>this.editBook(data.id)}><i className="fa fa-edit"/></button>
+                        <button onClick={()=>this.deleteBook(data.id)}><i className="fa fa-ban"/></button>
                     </td>
                 </tr>
             )
         })
     };
 
-
     handleInputTitle = (e, field) => {
+        let {editOBJ} = _.cloneDeep(this.state);
         let input = e.target.value;
+        editOBJ.title = input;
         this.setState({
-            valueTiTle: {[field]: input}
+            valueTiTle: {[field]: input},
+            editOBJ,
+            newEditOBJ: editOBJ
         });
+
+
     };
 
     handleInputAuthor= (e, field) => {
@@ -85,31 +95,49 @@ export default class App extends React.Component {
 
 
     addNewBook = () => {
+        let {valueTiTle, valueAuthor, book } = _.cloneDeep(this.state)
         let arrTemp = _.cloneDeep(this.state.book);
-        _.assign(this.state.objTerm1, this.state.valueTiTle);
-        _.assign(this.state.objTerm2, this.state.valueAuthor);
-       _.merge(this.state.objTerm1, this.state.objTerm2);
-       arrTemp.push(this.state.objTerm1);
-       this.setState({book: arrTemp, clickAddBook: false});
+        let newId = ++_.last(arrTemp).id;
+        let newBook = _.merge({id: newId},valueTiTle, valueAuthor);
+        book.push(newBook);
+        this.setState({book, clickAddBook: false});
+
     };
 
     deleteBook = (id) => {
-        console.log(id);
+
         let arrRemain = _.cloneDeep(this.state.book);
-        if (id !== -1) {
-            arrRemain.splice(--id, 1);
-        }
-        this.setState({book: arrRemain});
-    }
+        let newBooks = _.filter(arrRemain, (book) => {
+            return book.id !== id
+        });
+        this.setState({book: newBooks});
+    };
 
     editBook = (id) => {
-        this.setState({clickEditBook: true, idTerm: id});
-        console.log(this.state.book[--id].title);
+        let {book} = _.cloneDeep(this.state);
+        let editOBJ = _.find(book, ['id', id]);
+        this.setState({clickEditBook: true, editOBJ });
+        // console.log(book);
+    };
+
+    SaveBook = () => {
+        let {newEditOBJ, book, editOBJ} = _.cloneDeep(this.state);
+
+        this.setState({
+            editOBJ: newEditOBJ,
+            book
+        });
+
+        _.forEach(book, (item) => {
+            if (item.id === editOBJ.id ) {
+                _.merge(item, editOBJ)
+            }
+        });
     }
 
     render() {
-        let {clickAddBook, book, clickEditBook, idTerm} = _.clone(this.state);
-        console.log("idTerm",idTerm);
+        let {clickAddBook, clickEditBook, idTerm, editOBJ, book} = _.clone(this.state);
+        console.log(book);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -211,11 +239,11 @@ export default class App extends React.Component {
                             />
                             }
                             {clickEditBook &&
-                                <ModalEditBook idTerm={idTerm}
-                                               book={book}
+                                <ModalEditBook editOBJ={editOBJ}
                                                closeModal={this.closeModal}
-
-
+                                               handleInputTitle={this.handleInputTitle}
+                                               handleInputAuthor={this.handleInputAuthor}
+                                               SaveBook={this.SaveBook}
                                 />
                             }
                         </div>

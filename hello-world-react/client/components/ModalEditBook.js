@@ -7,21 +7,21 @@ export default class ModalAddBook extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            book: props.book,
-            idTerm: props.idTerm,
-            addNewBook: props.addNewBook
+
         };
     }
 
 
     render() {
-        const {closeModal, handleInputTitle, handleInputAuthor, addNewBook, idTerm, book} = this.props;
+        const {closeModal, handleInputTitle, handleInputAuthor, editOBJ, SaveBook} = this.props;
         return (
+
             <div className="modal fade in" id="modal-default" style={{display: "block"}}>
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={()=>closeModal()}>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"
+                                    onClick={()=>closeModal('clickEditBook')}>
                                 <span aria-hidden="true">×</span></button>
                             <h4 className="modal-title">New Book</h4>
                         </div>
@@ -52,20 +52,22 @@ export default class ModalAddBook extends React.Component {
                                     </thead>
                                     <tbody>
                                     <tr role="row" className="odd">
-                                        <td className="sorting_1">{this.state.idTerm}</td>
+                                        <td className="sorting_1">{editOBJ.id}</td>
                                         <td><input type="text"
                                                    className="form-control"
                                                    id="addTitle"
                                                    placeholder="title"
-                                                   value={this.state.book[--this.state.idTerm].title}
-                                                   onChange={(e)=>handleInputTitle(e, 'title')}/>
+                                                   defaultValue={editOBJ.title}
+                                                   onChange={(e)=>handleInputTitle(e, 'title')}
+                                            />
                                         </td>
                                         <td><input type="text"
                                                    className="form-control"
                                                    id="addAuthor"
                                                    placeholder="author"
-                                                   value={this.state.book[--this.state.idTerm].author}
-                                                   onChange={(e)=>handleInputAuthor(e, 'author')}/>
+                                                   defaultValue={editOBJ.author}
+                                                   onChange={(e)=>handleInputAuthor(e, 'author')}
+                                             />
                                         </td>
                                         <td style={{width: '14%'}}>
                                             <button><i className="fa fa-edit"></i></button>
@@ -79,9 +81,16 @@ export default class ModalAddBook extends React.Component {
                             </div>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-default pull-left" data-dismiss="modal" onClick={closeModal}>
+                            <button type="button"
+                                    className="btn btn-default pull-left"
+                                    data-dismiss="modal"
+                                    onClick={()=>closeModal('clickEditBook')}>
                                 Close</button>
-                            <button type="button" className="btn btn-primary">Edit</button>
+                            <button type="button"
+                                    className="btn btn-primary"
+                                    onClick={() => SaveBook(closeModal('clickEditBook'))}
+
+                            >Save</button>
                         </div>
                     </div>
                 </div>
