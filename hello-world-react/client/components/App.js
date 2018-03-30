@@ -1,6 +1,7 @@
 import React from 'react';
 import ModalAddBook from './ModalAddBook.js';
-import ModalEditBook from './ModalEditBook.js'
+import ModalEditBook from './ModalEditBook.js';
+import Modal from './Modal.js';
 import _ from 'lodash'
 export default class App extends React.Component {
 
@@ -15,7 +16,7 @@ export default class App extends React.Component {
             addID:'',
             addTitle: {},
             addAuthor: {},
-            book: [
+            books: [
                 {
                     id: 1,
                     title: 'How to win friends and influences people',
@@ -42,9 +43,8 @@ export default class App extends React.Component {
                     author: 'Dan',
                 }
             ],
-            editOBJ: {},
+            book: {id: null, title: null, author: null},
             textInput:'',
-            newEditOBJ:{},
             toggleEditForm: false
         }
     }
@@ -58,7 +58,7 @@ export default class App extends React.Component {
     };
 
     displayBookTable = () => {
-        return this.state.book.map((data, i) => {
+        return this.state.books.map((data, i) => {
             return (
                 <tr key={i}>
                     <td>{++i}</td>
@@ -73,38 +73,37 @@ export default class App extends React.Component {
         })
     };
 
-    handleInputTitle = (e, field) => {
-        let {editOBJ} = _.cloneDeep(this.state);
+    handleInputTitle = (e) => {
+        let {book} = _.cloneDeep(this.state);
         let input = e.target.value;
-        editOBJ.title = input;
+        book.title = input;
         this.setState({
-            valueTiTle: {[field]: input},
-            editOBJ,
-            newEditOBJ: editOBJ
+            // valueTiTle: {[field]: input},
+            book,
+            newbook: book
         });
     };
 
     handleInputAuthor= (e, field) => {
-        let {editOBJ} = _.cloneDeep(this.state);
+        let {book} = _.cloneDeep(this.state);
         let input = e.target.value;
-        editOBJ.author = input;
+        book.author = input;
         this.setState({
-            valueAuthor: {[field]: input},
-            editOBJ,
-            newEditOBJ: editOBJ
+            book,
+            newbook: book
         });
     };
 
 
-    addNewBook = () => {
-        let {valueTiTle, valueAuthor, book } = _.cloneDeep(this.state)
-        let arrTemp = _.cloneDeep(this.state.book);
-        let newId = ++_.last(arrTemp).id;
-        let newBook = _.merge({id: newId},valueTiTle, valueAuthor);
-        book.push(newBook);
-        this.setState({book, clickAddBook: false});
-
-    };
+    // addNewBook = () => {
+    //     let {valueTiTle, valueAuthor, book } = _.cloneDeep(this.state)
+    //     let arrTemp = _.cloneDeep(this.state.book);
+    //     let newId = ++_.last(arrTemp).id;
+    //     let newBook = _.merge({id: newId},valueTiTle, valueAuthor);
+    //     book.push(newBook);
+    //     this.setState({book, clickAddBook: false});
+    //
+    // };
 
     deleteBook = (id) => {
 
@@ -116,30 +115,33 @@ export default class App extends React.Component {
     };
 
     editBook = (id) => {
-        let {book} = _.cloneDeep(this.state);
-        let editOBJ = _.find(book, ['id', id]);
-        this.setState({clickEditBook: true, editOBJ });
-        // console.log(book);
+        let {books} = _.cloneDeep(this.state);
+        let book = _.find(books, ['id', id]);
+        this.setState({clickEditBook: true, book });
     };
 
-    SaveBook = () => {
-        let {newEditOBJ, book, editOBJ} = _.cloneDeep(this.state);
-
+    saveBook = () => {
+        let { books, book} = _.cloneDeep(this.state);
+        if (!book.id) {
+            let arrTemp = _.cloneDeep(this.state.books);
+             book.id = ++_.last(arrTemp).id;
+            books.push(book);
+        } else {
+            _.forEach(books, (item) => {
+                if (item.id === book.id ) {
+                    _.merge(item, book)
+                }
+            });
+        }
         this.setState({
-            editOBJ: newEditOBJ,
-            book
+            books,
+            clickAddBook: false,
+            clickEditBook: false,
         });
 
-        _.forEach(book, (item) => {
-            if (item.id === editOBJ.id ) {
-                _.merge(item, editOBJ)
-            }
-        });
     }
-
     render() {
-        let {clickAddBook, clickEditBook, idTerm, editOBJ, book} = _.clone(this.state);
-        console.log(book);
+        let {clickAddBook, clickEditBook, idTerm, book, books} = _.clone(this.state);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -201,7 +203,7 @@ export default class App extends React.Component {
                             <li className="header">MAIN NAVIGATION</li>
                             <li className="active treeview menu-open">
                                 <a href="#">
-                                    <i className="fa fa-dashboard"></i> <span>Book</span>
+                                    <i className="fa fa-dashboard"></i> <span>books</span>
                                     <span className="pull-right-container">
                                     <i className="fa fa-angle-left pull-right"></i>
                                     </span>
@@ -233,21 +235,41 @@ export default class App extends React.Component {
                         <div className="box-header">
                             <button onClick={() => this.addBook()}>Add new book</button>
                             {clickAddBook &&
-                            <ModalAddBook closeModal={this.closeModal}
-                                          handleInputTitle={this.handleInputTitle}
-                                          handleInputAuthor={this.handleInputAuthor}
-                                          addNewBook={this.addNewBook}
-                                          // id={_.last(book).id}
-                            />
-                            }
-                            {clickEditBook &&
-                                <ModalEditBook editOBJ={editOBJ}
-                                               closeModal={this.closeModal}
-                                               handleInputTitle={this.handleInputTitle}
-                                               handleInputAuthor={this.handleInputAuthor}
-                                               SaveBook={this.SaveBook}
+                                <Modal closeModal={this.closeModal}
+                                       // addNewBook={this.addNewBook}
+                                       handleInputTitle={this.handleInputTitle}
+                                       handleInputAuthor={this.handleInputAuthor}
+                                       saveBook={this.saveBook}
+                                       method="POST"
+
                                 />
                             }
+                            {
+                                clickEditBook &&
+                                    <Modal closeModal={this.closeModal}
+                                           handleInputTitle={this.handleInputTitle}
+                                           handleInputAuthor={this.handleInputAuthor}
+                                           saveBook={this.saveBook}
+                                           method="PUT"
+                                           book={book}
+                                    />
+                            }
+                            {/*{clickAddBook &&*/}
+                            {/*<ModalAddBook closeModal={this.closeModal}*/}
+                                          {/*handleInputTitle={this.handleInputTitle}*/}
+                                          {/*handleInputAuthor={this.handleInputAuthor}*/}
+                                          {/*addNewBook={this.addNewBook}*/}
+                                          {/*// id={_.last(book).id}*/}
+                            {/*/>*/}
+                            {/*}*/}
+                            {/*{clickEditBook &&*/}
+                                {/*<ModalEditBook book={book}*/}
+                                               {/*closeModal={this.closeModal}*/}
+                                               {/*handleInputTitle={this.handleInputTitle}*/}
+                                               {/*handleInputAuthor={this.handleInputAuthor}*/}
+                                               {/*SaveBook={this.SaveBook}*/}
+                                {/*/>*/}
+                            {/*}*/}
                         </div>
                         <div className="box-body">
                             <div id="example2_wrapper" className="dataTables_wrapper form-inline dt-bootstrap">
