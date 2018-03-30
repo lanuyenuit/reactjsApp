@@ -1,12 +1,15 @@
 import React from 'react';
 import ModalAddBook from './ModalAddBook.js';
+import ModalEditBook from './ModalEditBook.js'
 import _ from 'lodash'
 export default class App extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
+            idTerm:'',
             clickAddBook: false,
+            clickEditBook: false,
             valueTiTle: '',
             valueAuthor: '',
             objTerm1: {},
@@ -52,13 +55,13 @@ export default class App extends React.Component {
     displayBookTable = () => {
         return this.state.book.map((data, i) => {
             return (
-                <tr key={i++}>
-                    <td>{i}</td>
+                <tr key={i}>
+                    <td>{++i}</td>
                     <td>{data.title}</td>
                     <td>{data.author}</td>
                     <td>
-                        <button><i className="fa fa-edit"></i></button>
-                        <button><i className="fa fa-ban"></i></button>
+                        <button onClick={()=>this.editBook(i)}><i className="fa fa-edit"/></button>
+                        <button onClick={()=>this.deleteBook(i)}><i className="fa fa-ban"/></button>
                     </td>
                 </tr>
             )
@@ -90,8 +93,23 @@ export default class App extends React.Component {
        this.setState({book: arrTemp, clickAddBook: false});
     };
 
+    deleteBook = (id) => {
+        console.log(id);
+        let arrRemain = _.cloneDeep(this.state.book);
+        if (id !== -1) {
+            arrRemain.splice(--id, 1);
+        }
+        this.setState({book: arrRemain});
+    }
+
+    editBook = (id) => {
+        this.setState({clickEditBook: true, idTerm: id});
+        console.log(this.state.book[--id].title);
+    }
+
     render() {
-        let {clickAddBook, book} = _.clone(this.state);
+        let {clickAddBook, book, clickEditBook, idTerm} = _.clone(this.state);
+        console.log("idTerm",idTerm);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -189,8 +207,16 @@ export default class App extends React.Component {
                                           handleInputTitle={this.handleInputTitle}
                                           handleInputAuthor={this.handleInputAuthor}
                                           addNewBook={this.addNewBook}
-                                          id={++_.last(book).id}
+                                          // id={_.last(book).id}
                             />
+                            }
+                            {clickEditBook &&
+                                <ModalEditBook idTerm={idTerm}
+                                               book={book}
+                                               closeModal={this.closeModal}
+
+
+                                />
                             }
                         </div>
                         <div className="box-body">

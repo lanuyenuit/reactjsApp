@@ -7,7 +7,6 @@ export default class ModalAddBook extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            clickCloseModal : false,
             valueTitle: props.valueTiTle,
             valueAuthor: props.valueAuthor
         };
@@ -52,19 +51,19 @@ export default class ModalAddBook extends React.Component {
                                 </thead>
                                 <tbody>
                                 <tr role="row" className="odd">
-                                    <td className="sorting_1">{id}</td>
+                                    <td className="sorting_1">{}</td>
                                     <td><input type="text"
                                                className="form-control"
                                                id="addTitle"
                                                placeholder="title"
-                                               value={this.state.valueTitle}
+                                               // value={this.state.valueTitle}
                                                onChange={(e)=>handleInputTitle(e, 'title')}/>
                                     </td>
                                     <td><input type="text"
                                                className="form-control"
                                                id="addAuthor"
                                                placeholder="author"
-                                               value={this.state.valueAuthor}
+                                               // value={this.state.valueAuthor}
                                                onChange={(e)=>handleInputAuthor(e, 'author')}/>
                                     </td>
                                     <td style={{width: '14%'}}>
