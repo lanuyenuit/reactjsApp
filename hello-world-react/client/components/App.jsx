@@ -82,14 +82,16 @@ export default class App extends React.Component {
             editOBJ,
             newEditOBJ: editOBJ
         });
-
-
     };
 
     handleInputAuthor= (e, field) => {
+        let {editOBJ} = _.cloneDeep(this.state);
         let input = e.target.value;
+        editOBJ.author = input;
         this.setState({
-            valueAuthor: {[field]: input}
+            valueAuthor: {[field]: input},
+            editOBJ,
+            newEditOBJ: editOBJ
         });
     };
 
