@@ -1,8 +1,8 @@
 import React from 'react';
-import ModalAddBook from './ModalAddBook.js';
-import ModalEditBook from './ModalEditBook.js';
 import Modal from './Modal.js';
-import _ from 'lodash'
+import _ from 'lodash';
+import swal from 'sweetalert';
+
 export default class App extends React.Component {
 
     constructor(props) {
@@ -14,6 +14,8 @@ export default class App extends React.Component {
             addID:'',
             addTitle: {},
             addAuthor: {},
+            inputTerm:'',
+            resultID:[],
             books: [
                 {
                     id: 1,
@@ -57,15 +59,18 @@ export default class App extends React.Component {
     };
 
     displayBookTable = () => {
-        return this.state.books.map((data, i) => {
+        let {books, resultID} = _.cloneDeep(this.state);
+        return _.map(books, (book, i) =>  {
+            let checkID = _.includes(resultID, book.id);
+            let styleSearch = checkID ? { background: 'grey'} : {};
             return (
-                <tr key={i}>
+                <tr key={i} style={styleSearch} >
                     <td>{++i}</td>
-                    <td>{data.title}</td>
-                    <td>{data.author}</td>
+                    <td>{book.title}</td>
+                    <td>{book.author}</td>
                     <td>
-                        <button onClick={()=>this.editBook(data.id)}><i className="fa fa-edit"/></button>
-                        <button onClick={()=>this.deleteBook(data.id)}><i className="fa fa-ban"/></button>
+                        <button onClick={()=>this.editBook(book.id)}><i className="fa fa-edit"/></button>
+                        <button onClick={()=>this.deleteBook(book.id)}><i className="fa fa-ban"/></button>
                     </td>
                 </tr>
             )
@@ -73,10 +78,13 @@ export default class App extends React.Component {
     };
 
     handleInput = (e, field) => {
-        let {book} = _.cloneDeep(this.state);
+        let {book, inputTerm} = _.cloneDeep(this.state);
         let input = e.target.value;
         if (field === 'title') {
             book.title = input;
+        }
+        if (field === 'input') {
+            inputTerm = input
         }
         else {
             book.author = input;
@@ -84,6 +92,7 @@ export default class App extends React.Component {
 
         this.setState({
             book,
+            inputTerm,
             newbook: book
         });
     };
@@ -91,11 +100,22 @@ export default class App extends React.Component {
 
 
     deleteBook = (id) => {
-        let arrRemain = _.cloneDeep(this.state.books);
-        let newBooks = _.filter(arrRemain, (books) => {
-            return books.id !== id
-        });
-        this.setState({books: newBooks});
+        swal({
+            title: "Are you sure?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    let arrRemain = _.cloneDeep(this.state.books);
+                    let newBooks = _.filter(arrRemain, (books) => {
+                        return books.id !== id
+                    });
+                    this.setState({books: newBooks});
+                }
+            });
+
     };
 
     editBook = (id) => {
@@ -123,7 +143,25 @@ export default class App extends React.Component {
             clickAddBook: false,
             clickEditBook: false,
         });
-    }
+    };
+
+    searchBook = (e) => {
+        let result;
+        let input = e.target.value;
+        let {books} = _.cloneDeep(this.state);
+        if (typeof input === "undefined" ||  (input).length ===0) {
+            result = [];
+        } else {
+            result = _.filter(books, (c) => {
+                let searchIn = Object.keys(c).reduce((key, val) => {
+                    return (val !== 'id') ? key+c[val] : key
+                }, '');
+                return _.includes(_.lowerCase(searchIn),_.lowerCase(input));
+            });
+        }
+        this.setState({resultID: _.map(result, 'id')})
+    };
+
     render() {
         let {clickAddBook, clickEditBook, book} = _.clone(this.state);
         return (
@@ -217,13 +255,20 @@ export default class App extends React.Component {
                 <div className="content-wrapper" style={{minHeight: "960px"}}>
                     <div className="box">
                         <div className="box-header">
-                            <button onClick={() => this.addBook()}>Add new book</button>
+                            <button style={{float: "left"}} onClick={() => this.addBook()}>Add new book</button>
+                            <input style={{float: "right", width: "30%"}}
+                                   type="text"
+                                   className="form-control"
+                                   id="search"
+                                   placeholder="Search"
+                                   defaultValue=""
+                                   onKeyUp={(e)=>this.searchBook(e)}
+                            />
                             {clickAddBook &&
                                 <Modal closeModal={this.closeModal}
                                        handleInput={this.handleInput}
                                        saveBook={this.saveBook}
                                        method="POST"
-
                                 />
                             }
                             {

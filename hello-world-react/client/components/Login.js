@@ -3,6 +3,7 @@ import App from "./App.js";
 import _ from  'lodash';
 
 
+
 export default class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -25,12 +26,9 @@ export default class Login extends React.Component {
     };
 
     handleLogin = () =>  {
-
         if (_.isEqual(this.state.user.username, this.state.usernameTemp) && _.isEqual(this.state.user.password, this.state.passwordTemp)) {
             this.setState({toggleSignin: true});
         }
-
-
     };
 
     render() {
