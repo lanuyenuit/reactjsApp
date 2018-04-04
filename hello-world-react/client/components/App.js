@@ -50,7 +50,8 @@ export default class App extends React.Component {
     }
 
     addBook = () => {
-        this.setState({clickAddBook: true});
+        let bookInit = {id: null, title: null, author: null};
+        this.setState({clickAddBook: true, book: bookInit});
     };
 
     closeModal = (modalName) => {
@@ -94,30 +95,18 @@ export default class App extends React.Component {
         });
     };
 
-
-    // addNewBook = () => {
-    //     let {valueTiTle, valueAuthor, book } = _.cloneDeep(this.state)
-    //     let arrTemp = _.cloneDeep(this.state.book);
-    //     let newId = ++_.last(arrTemp).id;
-    //     let newBook = _.merge({id: newId},valueTiTle, valueAuthor);
-    //     book.push(newBook);
-    //     this.setState({book, clickAddBook: false});
-    //
-    // };
-
     deleteBook = (id) => {
-
-        let arrRemain = _.cloneDeep(this.state.book);
-        let newBooks = _.filter(arrRemain, (book) => {
-            return book.id !== id
+        let arrRemain = _.cloneDeep(this.state.books);
+        let newBooks = _.filter(arrRemain, (books) => {
+            return books.id !== id
         });
-        this.setState({book: newBooks});
+        this.setState({books: newBooks});
     };
 
     editBook = (id) => {
         let {books} = _.cloneDeep(this.state);
         let book = _.find(books, ['id', id]);
-        this.setState({clickEditBook: true, book });
+        this.setState({clickEditBook: true, book: book});
     };
 
     saveBook = () => {
@@ -135,13 +124,13 @@ export default class App extends React.Component {
         }
         this.setState({
             books,
+            book,
             clickAddBook: false,
             clickEditBook: false,
         });
-
     }
     render() {
-        let {clickAddBook, clickEditBook, idTerm, book, books} = _.clone(this.state);
+        let {clickAddBook, clickEditBook, book} = _.clone(this.state);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -236,7 +225,6 @@ export default class App extends React.Component {
                             <button onClick={() => this.addBook()}>Add new book</button>
                             {clickAddBook &&
                                 <Modal closeModal={this.closeModal}
-                                       // addNewBook={this.addNewBook}
                                        handleInputTitle={this.handleInputTitle}
                                        handleInputAuthor={this.handleInputAuthor}
                                        saveBook={this.saveBook}
@@ -254,22 +242,6 @@ export default class App extends React.Component {
                                            book={book}
                                     />
                             }
-                            {/*{clickAddBook &&*/}
-                            {/*<ModalAddBook closeModal={this.closeModal}*/}
-                                          {/*handleInputTitle={this.handleInputTitle}*/}
-                                          {/*handleInputAuthor={this.handleInputAuthor}*/}
-                                          {/*addNewBook={this.addNewBook}*/}
-                                          {/*// id={_.last(book).id}*/}
-                            {/*/>*/}
-                            {/*}*/}
-                            {/*{clickEditBook &&*/}
-                                {/*<ModalEditBook book={book}*/}
-                                               {/*closeModal={this.closeModal}*/}
-                                               {/*handleInputTitle={this.handleInputTitle}*/}
-                                               {/*handleInputAuthor={this.handleInputAuthor}*/}
-                                               {/*SaveBook={this.SaveBook}*/}
-                                {/*/>*/}
-                            {/*}*/}
                         </div>
                         <div className="box-body">
                             <div id="example2_wrapper" className="dataTables_wrapper form-inline dt-bootstrap">
