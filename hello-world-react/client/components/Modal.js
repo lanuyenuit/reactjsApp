@@ -11,7 +11,7 @@ export default class ModalAddBook extends React.Component {
 
 
     render() {
-        const {closeModal, handleInputTitle, handleInputAuthor, saveBook, book, method} = this.props;
+        const {closeModal, handleInput, saveBook, book, method} = this.props;
         return (
             <div className="modal fade in" id="modal-default" style={{display: "block"}}>
                 <div className="modal-dialog">
@@ -58,14 +58,14 @@ export default class ModalAddBook extends React.Component {
                                                    id="addTitle"
                                                    placeholder="title"
                                                    defaultValue={book ? book.title: ''}
-                                                   onChange={(e)=>handleInputTitle(e)}/>
+                                                   onChange={(e)=>handleInput(e, 'title')}/>
                                         </td>
                                         <td><input type="text"
                                                    className="form-control"
                                                    id="addAuthor"
                                                    placeholder="author"
                                                    defaultValue={book ? book.author: ''}
-                                                   onChange={(e)=>handleInputAuthor(e)}/>
+                                                   onChange={(e)=>handleInput(e, 'author')}/>
                                         </td>
                                         <td style={{width: '14%'}}>
                                             <button><i className="fa fa-edit"></i></button>

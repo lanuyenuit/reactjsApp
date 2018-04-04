@@ -11,8 +11,6 @@ export default class App extends React.Component {
             idTerm:'',
             clickAddBook: false,
             clickEditBook: false,
-            valueTiTle: '',
-            valueAuthor: '',
             addID:'',
             addTitle: {},
             addAuthor: {},
@@ -74,26 +72,23 @@ export default class App extends React.Component {
         })
     };
 
-    handleInputTitle = (e) => {
+    handleInput = (e, field) => {
         let {book} = _.cloneDeep(this.state);
         let input = e.target.value;
-        book.title = input;
+        if (field === 'title') {
+            book.title = input;
+        }
+        else {
+            book.author = input;
+        }
+
         this.setState({
-            // valueTiTle: {[field]: input},
             book,
             newbook: book
         });
     };
 
-    handleInputAuthor= (e, field) => {
-        let {book} = _.cloneDeep(this.state);
-        let input = e.target.value;
-        book.author = input;
-        this.setState({
-            book,
-            newbook: book
-        });
-    };
+
 
     deleteBook = (id) => {
         let arrRemain = _.cloneDeep(this.state.books);
@@ -225,8 +220,7 @@ export default class App extends React.Component {
                             <button onClick={() => this.addBook()}>Add new book</button>
                             {clickAddBook &&
                                 <Modal closeModal={this.closeModal}
-                                       handleInputTitle={this.handleInputTitle}
-                                       handleInputAuthor={this.handleInputAuthor}
+                                       handleInput={this.handleInput}
                                        saveBook={this.saveBook}
                                        method="POST"
 
@@ -235,8 +229,7 @@ export default class App extends React.Component {
                             {
                                 clickEditBook &&
                                     <Modal closeModal={this.closeModal}
-                                           handleInputTitle={this.handleInputTitle}
-                                           handleInputAuthor={this.handleInputAuthor}
+                                           handleInput={this.handleInput}
                                            saveBook={this.saveBook}
                                            method="PUT"
                                            book={book}
