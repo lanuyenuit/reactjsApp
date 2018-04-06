@@ -3,12 +3,7 @@ import React from 'react';
 export default class ModalAddBook extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            valueTitle: props.valueTiTle,
-            valueAuthor: props.valueAuthor
-        };
     }
-
 
     render() {
         const {closeModal, handleInput, saveBook, book, method} = this.props;
@@ -52,7 +47,7 @@ export default class ModalAddBook extends React.Component {
                                     </thead>
                                     <tbody>
                                     <tr role="row" className="odd">
-                                        <td className="sorting_1">{}</td>
+                                        <td className="sorting_1"/>
                                         <td><input type="text"
                                                    className="form-control"
                                                    id="addTitle"

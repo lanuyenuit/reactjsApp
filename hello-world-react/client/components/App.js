@@ -1,8 +1,10 @@
 import React from 'react';
 import Modal from './Modal.js';
 import _ from 'lodash';
+import SearchModal from './SearchModal'
 import swal from 'sweetalert';
-
+import {Pagination} from 'react-bootstrap'
+const PER_PAGE_SIZE = 2, MAX_PAGE_SIZE =100;
 export default class App extends React.Component {
 
     constructor(props) {
@@ -11,11 +13,12 @@ export default class App extends React.Component {
             idTerm:'',
             clickAddBook: false,
             clickEditBook: false,
+            clickSearchBook: false,
             addID:'',
             addTitle: {},
             addAuthor: {},
-            inputTerm:'',
-            resultID:[],
+            inputSearch:'',
+            resultIDs:[],
             books: [
                 {
                     id: 1,
@@ -45,7 +48,8 @@ export default class App extends React.Component {
             ],
             book: {id: null, title: null, author: null},
             textInput:'',
-            toggleEditForm: false
+            toggleEditForm: false,
+            activePage: 1
         }
     }
 
@@ -59,12 +63,10 @@ export default class App extends React.Component {
     };
 
     displayBookTable = () => {
-        let {books, resultID} = _.cloneDeep(this.state);
+        let {books} = _.cloneDeep(this.state);
         return _.map(books, (book, i) =>  {
-            let checkID = _.includes(resultID, book.id);
-            let styleSearch = checkID ? { background: 'grey'} : {};
             return (
-                <tr key={i} style={styleSearch} >
+                <tr key={i} >
                     <td>{++i}</td>
                     <td>{book.title}</td>
                     <td>{book.author}</td>
@@ -78,13 +80,14 @@ export default class App extends React.Component {
     };
 
     handleInput = (e, field) => {
-        let {book, inputTerm} = _.cloneDeep(this.state);
+        let {book, inputSearch} = _.cloneDeep(this.state);
         let input = e.target.value;
+
         if (field === 'title') {
             book.title = input;
         }
-        if (field === 'input') {
-            inputTerm = input
+        if (field === 'search') {
+            inputSearch = input;
         }
         else {
             book.author = input;
@@ -92,12 +95,10 @@ export default class App extends React.Component {
 
         this.setState({
             book,
-            inputTerm,
+            inputSearch,
             newbook: book
         });
     };
-
-
 
     deleteBook = (id) => {
         swal({
@@ -145,25 +146,27 @@ export default class App extends React.Component {
         });
     };
 
-    searchBook = (e) => {
+    searchBooks = () => {
         let result;
-        let input = e.target.value;
+        let {inputSearch} = _.clone(this.state);
         let {books} = _.cloneDeep(this.state);
-        if (typeof input === "undefined" ||  (input).length ===0) {
+        if (typeof inputSearch === "undefined" ||  (inputSearch).length ===0) {
             result = [];
         } else {
             result = _.filter(books, (c) => {
                 let searchIn = Object.keys(c).reduce((key, val) => {
                     return (val !== 'id') ? key+c[val] : key
                 }, '');
-                return _.includes(_.lowerCase(searchIn),_.lowerCase(input));
+                return _.includes(_.lowerCase(searchIn),_.lowerCase(inputSearch));
             });
         }
-        this.setState({resultID: _.map(result, 'id')})
+        this.setState({resultIDs: _.map(result, 'id'), clickSearchBook: true});
     };
 
+
+
     render() {
-        let {clickAddBook, clickEditBook, book} = _.clone(this.state);
+        let {clickAddBook, clickEditBook, clickSearchBook, book, books, resultIDs} = _.clone(this.state);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -255,16 +258,24 @@ export default class App extends React.Component {
                 <div className="content-wrapper" style={{minHeight: "960px"}}>
                     <div className="box">
                         <div className="box-header">
-                            <button style={{float: "left"}} onClick={() => this.addBook()}>Add new book</button>
-                            <input style={{float: "right", width: "30%"}}
-                                   type="text"
-                                   className="form-control"
-                                   id="search"
-                                   placeholder="Search"
-                                   defaultValue=""
-                                   onKeyUp={(e)=>this.searchBook(e)}
-                            />
-                            {clickAddBook &&
+                            <button style={{float: "left", marginRight: '10px'}} onClick={() => this.addBook()}>Add new book</button>
+                            <div style={{
+                                width: '40%',
+                                float: 'right',
+                                display: 'inline-flex',
+                                marginBottom: '10px'}}>
+                                <input style={{display: 'block'}}
+                                    type="text"
+                                    className="form-control"
+                                    id="search"
+                                    placeholder="Search"
+                                    onChange={(e)=>this.handleInput(e,'search')}
+                                />
+                                <button onClick={()=>this.searchBooks()} style={{display: 'block'}}>Search</button>
+                            </div>
+
+                            {
+                                clickAddBook &&
                                 <Modal closeModal={this.closeModal}
                                        handleInput={this.handleInput}
                                        saveBook={this.saveBook}
@@ -280,12 +291,20 @@ export default class App extends React.Component {
                                            book={book}
                                     />
                             }
+                            {
+                                clickSearchBook &&
+                                    <SearchModal displaySearchResult={this.displaySearchResult}
+                                                 closeModal={this.closeModal}
+                                                 books={books}
+                                                 resultIDs={resultIDs}
+                                    />
+                            }
                         </div>
                         <div className="box-body">
                             <div id="example2_wrapper" className="dataTables_wrapper form-inline dt-bootstrap">
                                 <div className="row">
-                                    <div className="col-sm-6"></div>
-                                    <div className="col-sm-6"></div>
+                                    <div className="col-sm-6"/>
+                                    <div className="col-sm-6"/>
                                 </div>
                                 <div className="row">
                                     <div className="col-sm-12">
@@ -324,41 +343,27 @@ export default class App extends React.Component {
                                              aria-live="polite">Showing 1 to 10 of 57 entries
                                         </div>
                                     </div>
-                                    <div className="col-sm-7">
-                                        <div className="dataTables_paginate paging_simple_numbers"
-                                             id="example2_paginate">
-                                            <ul className="pagination">
-                                                <li className="paginate_button previous disabled"
-                                                    id="example2_previous"><a href="#" aria-controls="example2"
-                                                                              data-dt-idx="0" tabindex="0">Previous</a>
-                                                </li>
-                                                <li className="paginate_button active"><a href="#"
-                                                                                          aria-controls="example2"
-                                                                                          data-dt-idx="1"
-                                                                                          tabindex="0">1</a></li>
-                                                <li className="paginate_button "><a href="#" aria-controls="example2"
-                                                                                    data-dt-idx="2" tabindex="0">2</a>
-                                                </li>
-                                                <li className="paginate_button "><a href="#" aria-controls="example2"
-                                                                                    data-dt-idx="3" tabindex="0">3</a>
-                                                </li>
-                                                <li className="paginate_button "><a href="#" aria-controls="example2"
-                                                                                    data-dt-idx="4" tabindex="0">4</a>
-                                                </li>
-                                                <li className="paginate_button "><a href="#" aria-controls="example2"
-                                                                                    data-dt-idx="5" tabindex="0">5</a>
-                                                </li>
-                                                <li className="paginate_button "><a href="#" aria-controls="example2"
-                                                                                    data-dt-idx="6" tabindex="0">6</a>
-                                                </li>
-                                                <li className="paginate_button next" id="example2_next"><a href="#"
-                                                                                                           aria-controls="example2"
-                                                                                                           data-dt-idx="7"
-                                                                                                           tabindex="0">Next</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <Pagination>
+                                        <Pagination.First />
+                                        <Pagination.Prev />
+                                        <Pagination.Item>{1}</Pagination.Item>
+                                        <Pagination.Item>{2}</Pagination.Item>
+                                        <Pagination.Item>{3}</Pagination.Item>
+                                        <Pagination.Item>{4}</Pagination.Item>
+
+                                        <Pagination.Ellipsis />
+
+                                        <Pagination.Item>{10}</Pagination.Item>
+                                        <Pagination.Item>{11}</Pagination.Item>
+                                        <Pagination.Item active>{12}</Pagination.Item>
+                                        <Pagination.Item>{13}</Pagination.Item>
+                                        <Pagination.Item disabled>{14}</Pagination.Item>
+
+                                        <Pagination.Ellipsis />
+                                        <Pagination.Item>{20}</Pagination.Item>
+                                        <Pagination.Next />
+                                        <Pagination.Last />
+                                    </Pagination>;
                                 </div>
                             </div>
                         </div>
