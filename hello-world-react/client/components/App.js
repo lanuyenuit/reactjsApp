@@ -3,14 +3,11 @@ import Modal from './Modal.js';
 import _ from 'lodash';
 import SearchModal from './SearchModal'
 import swal from 'sweetalert';
-import Protype from 'prop-types'
-// import {Pagination} from 'react-bootstrap';
 import Pagination from './Pagination'
 
 export default class App extends React.Component {
 
     constructor(props) {
-        // let exampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Item ' + i }; });
         super(props);
         this.state = {
             idTerm:'',
@@ -192,11 +189,14 @@ export default class App extends React.Component {
             activePage: 1,
             // exampleItems: exampleItems,
             pageOfItems: [],
-
+            currentPage: 1
         }
     }
-    onChangePage = (pageOfItems) => {
-        this.setState({ pageOfItems: pageOfItems });
+    onChangePage = (pageOfItems, currentPage) => {
+        this.setState({
+            pageOfItems: pageOfItems,
+            currentPage
+        });
     }
 
     addBook = () => {
@@ -209,11 +209,14 @@ export default class App extends React.Component {
     };
 
     displayBookTable = () => {
-        let {pageOfItems} = _.cloneDeep(this.state);
+        let {
+            pageOfItems,
+            currentPage
+        } = _.cloneDeep(this.state);
         return _.map(pageOfItems, (item, i) =>  {
             return (
                 <tr key={i} >
-                    <td>{++ (i)}</td>
+                    <td>{(10*(currentPage-1) +i+1)}</td>
                     <td>{item.title}</td>
                     <td>{item.author}</td>
                     <td>
