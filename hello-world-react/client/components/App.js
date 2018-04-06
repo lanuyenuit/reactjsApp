@@ -10,7 +10,7 @@ import Pagination from './Pagination'
 export default class App extends React.Component {
 
     constructor(props) {
-        let exampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Item ' + i }; });
+        // let exampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Item ' + i }; });
         super(props);
         this.state = {
             idTerm:'',
@@ -46,6 +46,106 @@ export default class App extends React.Component {
                 {
                     id: 5,
                     title: 'Predictably irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 6,
+                    title: '6 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 7,
+                    title: '7 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 8,
+                    title: '8 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 9,
+                    title: '9 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 10,
+                    title: '10',
+                    author: 'Dan',
+                },
+                {
+                    id: 11,
+                    title: '11 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 12,
+                    title: '12 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 13,
+                    title: '13 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 14,
+                    title: '14 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 15,
+                    title: '15 irrational',
                     author: 'Dan',
                 }
             ],
@@ -90,12 +190,12 @@ export default class App extends React.Component {
             textInput:'',
             toggleEditForm: false,
             activePage: 1,
-            exampleItems: exampleItems,
-            pageOfItems: []
+            // exampleItems: exampleItems,
+            pageOfItems: [],
+
         }
     }
     onChangePage = (pageOfItems) => {
-        // update state with new page of items
         this.setState({ pageOfItems: pageOfItems });
     }
 
@@ -109,16 +209,16 @@ export default class App extends React.Component {
     };
 
     displayBookTable = () => {
-        let {books} = _.cloneDeep(this.state);
-        return _.map(books, (book, i) =>  {
+        let {pageOfItems} = _.cloneDeep(this.state);
+        return _.map(pageOfItems, (item, i) =>  {
             return (
                 <tr key={i} >
-                    <td>{++i}</td>
-                    <td>{book.title}</td>
-                    <td>{book.author}</td>
+                    <td>{++ (i)}</td>
+                    <td>{item.title}</td>
+                    <td>{item.author}</td>
                     <td>
-                        <button onClick={()=>this.editBook(book.id)}><i className="fa fa-edit"/></button>
-                        <button onClick={()=>this.deleteBook(book.id)}><i className="fa fa-ban"/></button>
+                        <button onClick={()=>this.editBook(item.id)}><i className="fa fa-edit"/></button>
+                        <button onClick={()=>this.deleteBook(item.id)}><i className="fa fa-ban"/></button>
                     </td>
                 </tr>
             )
@@ -181,6 +281,8 @@ export default class App extends React.Component {
             _.forEach(books, (item) => {
                 if (item.id === book.id ) {
                     _.merge(item, book)
+
+
                 }
             });
         }
@@ -212,7 +314,9 @@ export default class App extends React.Component {
 
 
     render() {
-        let {clickAddBook, clickEditBook, clickSearchBook, book, books, resultIDs, pageOfItems, exampleItems} = _.clone(this.state);
+        let {clickAddBook, clickEditBook, clickSearchBook, book,
+            books, resultIDs
+            } = _.clone(this.state);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -274,9 +378,9 @@ export default class App extends React.Component {
                             <li className="header">MAIN NAVIGATION</li>
                             <li className="active treeview menu-open">
                                 <a href="#">
-                                    <i className="fa fa-dashboard"></i> <span>books</span>
+                                    <i className="fa fa-dashboard"/> <span>books</span>
                                     <span className="pull-right-container">
-                                    <i className="fa fa-angle-left pull-right"></i>
+                                    <i className="fa fa-angle-left pull-right"/>
                                     </span>
                                 </a>
 
@@ -284,9 +388,9 @@ export default class App extends React.Component {
                             </li>
                             <li className="treeview menu-open">
                                 <a href="#">
-                                    <i className="fa fa-dashboard"></i> <span>Authors</span>
+                                    <i className="fa fa-dashboard"/> <span>Authors</span>
                                     <span className="pull-right-container">
-                                        <i className="fa fa-angle-left pull-right"></i>
+                                        <i className="fa fa-angle-left pull-right"/>
                                      </span>
                                 </a>
                             </li>
@@ -379,6 +483,7 @@ export default class App extends React.Component {
                                             </thead>
                                             <tbody>
                                             {this.displayBookTable()}
+                                            {/**/}
                                             </tbody>
                                         </table>
                                     </div>
@@ -392,37 +497,13 @@ export default class App extends React.Component {
                                     <div>
                                         <div className="container">
                                             <div className="text-center">
-                                                <h1>React - Pagination Example with logic like Google</h1>
-                                                {_.map(pageOfItems,(item) =>
-                                                    <div key={item.id}>{item.name}</div>
-                                                )}
-                                                <Pagination items={exampleItems} onChangePage={this.onChangePage} />
+                                                <Pagination items={books} onChangePage={this.onChangePage} />
                                             </div>
                                         </div>
                                         <hr />
 
                                     </div>
-                                    {/*<Pagination>*/}
-                                        {/*<Pagination.First />*/}
-                                        {/*<Pagination.Prev />*/}
-                                        {/*<Pagination.Item>{1}</Pagination.Item>*/}
-                                        {/*<Pagination.Item>{2}</Pagination.Item>*/}
-                                        {/*<Pagination.Item>{3}</Pagination.Item>*/}
-                                        {/*<Pagination.Item>{4}</Pagination.Item>*/}
 
-                                        {/*<Pagination.Ellipsis />*/}
-
-                                        {/*<Pagination.Item>{10}</Pagination.Item>*/}
-                                        {/*<Pagination.Item>{11}</Pagination.Item>*/}
-                                        {/*<Pagination.Item active>{12}</Pagination.Item>*/}
-                                        {/*<Pagination.Item>{13}</Pagination.Item>*/}
-                                        {/*<Pagination.Item disabled>{14}</Pagination.Item>*/}
-
-                                        {/*<Pagination.Ellipsis />*/}
-                                        {/*<Pagination.Item>{20}</Pagination.Item>*/}
-                                        {/*<Pagination.Next />*/}
-                                        {/*<Pagination.Last />*/}
-                                    {/*</Pagination>;*/}
                                 </div>
                             </div>
                         </div>
