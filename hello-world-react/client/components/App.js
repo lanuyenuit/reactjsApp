@@ -3,11 +3,14 @@ import Modal from './Modal.js';
 import _ from 'lodash';
 import SearchModal from './SearchModal'
 import swal from 'sweetalert';
-import {Pagination} from 'react-bootstrap'
-const PER_PAGE_SIZE = 2, MAX_PAGE_SIZE =100;
+import Protype from 'prop-types'
+// import {Pagination} from 'react-bootstrap';
+import Pagination from './Pagination'
+
 export default class App extends React.Component {
 
     constructor(props) {
+        let exampleItems = _.range(1, 151).map(i => { return { id: i, name: 'Item ' + i }; });
         super(props);
         this.state = {
             idTerm:'',
@@ -46,11 +49,54 @@ export default class App extends React.Component {
                     author: 'Dan',
                 }
             ],
+            booksPaging: [
+                {
+                    id: 1,
+                    title: 'How to win friends and influences people',
+                    author: 'Dale Carnegie',
+                },
+                {
+                    id: 2,
+                    title: 'Who got your back',
+                    author: 'Keith Ferrazzi',
+                },
+                {
+                    id: 3,
+                    title: '7 habits of highly effective people',
+                    author: 'Stephen Covey',
+                },
+                {
+                    id: 4,
+                    title: 'Never eat alone',
+                    author: 'Keith Ferrazzi',
+                },
+                {
+                    id: 5,
+                    title: 'Predictably irrational',
+                    author: 'Dan',
+                },
+                {
+                    id: 6,
+                    title: 'Predictably ',
+                    author: 'Dan ni',
+                },
+                {
+                    id: 7,
+                    title: 'Predict',
+                    author: 'Dan',
+                }
+            ],
             book: {id: null, title: null, author: null},
             textInput:'',
             toggleEditForm: false,
-            activePage: 1
+            activePage: 1,
+            exampleItems: exampleItems,
+            pageOfItems: []
         }
+    }
+    onChangePage = (pageOfItems) => {
+        // update state with new page of items
+        this.setState({ pageOfItems: pageOfItems });
     }
 
     addBook = () => {
@@ -166,7 +212,7 @@ export default class App extends React.Component {
 
 
     render() {
-        let {clickAddBook, clickEditBook, clickSearchBook, book, books, resultIDs} = _.clone(this.state);
+        let {clickAddBook, clickEditBook, clickSearchBook, book, books, resultIDs, pageOfItems, exampleItems} = _.clone(this.state);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -343,27 +389,40 @@ export default class App extends React.Component {
                                              aria-live="polite">Showing 1 to 10 of 57 entries
                                         </div>
                                     </div>
-                                    <Pagination>
-                                        <Pagination.First />
-                                        <Pagination.Prev />
-                                        <Pagination.Item>{1}</Pagination.Item>
-                                        <Pagination.Item>{2}</Pagination.Item>
-                                        <Pagination.Item>{3}</Pagination.Item>
-                                        <Pagination.Item>{4}</Pagination.Item>
+                                    <div>
+                                        <div className="container">
+                                            <div className="text-center">
+                                                <h1>React - Pagination Example with logic like Google</h1>
+                                                {_.map(pageOfItems,(item) =>
+                                                    <div key={item.id}>{item.name}</div>
+                                                )}
+                                                <Pagination items={exampleItems} onChangePage={this.onChangePage} />
+                                            </div>
+                                        </div>
+                                        <hr />
 
-                                        <Pagination.Ellipsis />
+                                    </div>
+                                    {/*<Pagination>*/}
+                                        {/*<Pagination.First />*/}
+                                        {/*<Pagination.Prev />*/}
+                                        {/*<Pagination.Item>{1}</Pagination.Item>*/}
+                                        {/*<Pagination.Item>{2}</Pagination.Item>*/}
+                                        {/*<Pagination.Item>{3}</Pagination.Item>*/}
+                                        {/*<Pagination.Item>{4}</Pagination.Item>*/}
 
-                                        <Pagination.Item>{10}</Pagination.Item>
-                                        <Pagination.Item>{11}</Pagination.Item>
-                                        <Pagination.Item active>{12}</Pagination.Item>
-                                        <Pagination.Item>{13}</Pagination.Item>
-                                        <Pagination.Item disabled>{14}</Pagination.Item>
+                                        {/*<Pagination.Ellipsis />*/}
 
-                                        <Pagination.Ellipsis />
-                                        <Pagination.Item>{20}</Pagination.Item>
-                                        <Pagination.Next />
-                                        <Pagination.Last />
-                                    </Pagination>;
+                                        {/*<Pagination.Item>{10}</Pagination.Item>*/}
+                                        {/*<Pagination.Item>{11}</Pagination.Item>*/}
+                                        {/*<Pagination.Item active>{12}</Pagination.Item>*/}
+                                        {/*<Pagination.Item>{13}</Pagination.Item>*/}
+                                        {/*<Pagination.Item disabled>{14}</Pagination.Item>*/}
+
+                                        {/*<Pagination.Ellipsis />*/}
+                                        {/*<Pagination.Item>{20}</Pagination.Item>*/}
+                                        {/*<Pagination.Next />*/}
+                                        {/*<Pagination.Last />*/}
+                                    {/*</Pagination>;*/}
                                 </div>
                             </div>
                         </div>
