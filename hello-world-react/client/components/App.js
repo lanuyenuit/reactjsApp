@@ -10,13 +10,10 @@ export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            idTerm:'',
             clickAddBook: false,
             clickEditBook: false,
             clickSearchBook: false,
             addID:'',
-            addTitle: {},
-            addAuthor: {},
             inputSearch:'',
             resultIDs:[],
             books: [
@@ -146,62 +143,27 @@ export default class App extends React.Component {
                     author: 'Dan',
                 }
             ],
-            booksPaging: [
-                {
-                    id: 1,
-                    title: 'How to win friends and influences people',
-                    author: 'Dale Carnegie',
-                },
-                {
-                    id: 2,
-                    title: 'Who got your back',
-                    author: 'Keith Ferrazzi',
-                },
-                {
-                    id: 3,
-                    title: '7 habits of highly effective people',
-                    author: 'Stephen Covey',
-                },
-                {
-                    id: 4,
-                    title: 'Never eat alone',
-                    author: 'Keith Ferrazzi',
-                },
-                {
-                    id: 5,
-                    title: 'Predictably irrational',
-                    author: 'Dan',
-                },
-                {
-                    id: 6,
-                    title: 'Predictably ',
-                    author: 'Dan ni',
-                },
-                {
-                    id: 7,
-                    title: 'Predict',
-                    author: 'Dan',
-                }
-            ],
             book: {id: null, title: null, author: null},
-            textInput:'',
             toggleEditForm: false,
             activePage: 1,
-            // exampleItems: exampleItems,
             pageOfItems: [],
             currentPage: 1
         }
     }
+
     onChangePage = (pageOfItems, currentPage) => {
         this.setState({
             pageOfItems: pageOfItems,
             currentPage
         });
-    }
+    };
 
     addBook = () => {
         let bookInit = {id: null, title: null, author: null};
-        this.setState({clickAddBook: true, book: bookInit});
+        this.setState({
+            clickAddBook: true,
+            book: bookInit
+        });
     };
 
     closeModal = (modalName) => {
@@ -213,6 +175,7 @@ export default class App extends React.Component {
             pageOfItems,
             currentPage
         } = _.cloneDeep(this.state);
+
         return _.map(pageOfItems, (item, i) =>  {
             return (
                 <tr key={i} >
@@ -269,13 +232,20 @@ export default class App extends React.Component {
     };
 
     editBook = (id) => {
+
         let {books} = _.cloneDeep(this.state);
         let book = _.find(books, ['id', id]);
-        this.setState({clickEditBook: true, book: book});
+
+        this.setState({
+            clickEditBook: true,
+            book: book
+        });
     };
 
     saveBook = () => {
+
         let { books, book} = _.cloneDeep(this.state);
+
         if (!book.id) {
             let arrTemp = _.cloneDeep(this.state.books);
              book.id = ++_.last(arrTemp).id;
@@ -289,18 +259,22 @@ export default class App extends React.Component {
                 }
             });
         }
+
         this.setState({
             books,
             book,
             clickAddBook: false,
             clickEditBook: false,
         });
+
     };
 
     searchBooks = () => {
+
         let result;
         let {inputSearch} = _.clone(this.state);
         let {books} = _.cloneDeep(this.state);
+
         if (typeof inputSearch === "undefined" ||  (inputSearch).length ===0) {
             result = [];
         } else {
@@ -311,7 +285,11 @@ export default class App extends React.Component {
                 return _.includes(_.lowerCase(searchIn),_.lowerCase(inputSearch));
             });
         }
-        this.setState({resultIDs: _.map(result, 'id'), clickSearchBook: true});
+
+        this.setState({
+            resultIDs: _.map(result, 'id'),
+            clickSearchBook: true
+        });
     };
 
 
@@ -503,10 +481,8 @@ export default class App extends React.Component {
                                                 <Pagination items={books} onChangePage={this.onChangePage} />
                                             </div>
                                         </div>
-                                        <hr />
-
+                                        <hr/>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

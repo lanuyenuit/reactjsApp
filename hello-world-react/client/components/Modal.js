@@ -66,9 +66,7 @@ export default class ModalAddBook extends React.Component {
                                             <button><i className="fa fa-edit"></i></button>
                                             <button><i className="fa fa-ban"></i></button>
                                         </td>
-
                                     </tr>
-
                                     </tbody>
                                 </table>
                             </div>
