@@ -6,7 +6,7 @@ export default class ModalAddBook extends React.Component {
     }
 
     render() {
-        const {closeModal, handleInput, saveBook, book, method} = this.props;
+        const {closeModal, handleInput, saveBook, book,books, method} = this.props;
         return (
             <div className="modal fade in" id="modal-default" style={{display: "block"}}>
                 <div className="modal-dialog">

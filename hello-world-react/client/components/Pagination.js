@@ -1,6 +1,7 @@
 import React  from 'react';
 import PropTypes from 'prop-types';
-import _ from 'lodash'
+import _ from 'lodash';
+
 const propTypes = {
     items: PropTypes.array.isRequired,
     onChangePage: PropTypes.func.isRequired,
@@ -14,24 +15,29 @@ const defaultProps = {
 export default class Pagination extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { pager: {} };
+        this.state = {pager: {}};
     }
 
     componentWillMount() {
-        if (this.props.items && this.props.items.length) {
-            this.setPage(this.props.initialPage);
+        let {items, initialPage} = _.cloneDeep(this.props);
+        if (items && items.length) {
+            this.setPage(initialPage);
         }
     }
 
-    componentDidUpdate(prevProps) {
-        if (this.props.items !== prevProps.items) {
-            this.setPage(this.props.initialPage);
+    componentWillUpdate(nextProps, nextState) {
+        let {items} = _.cloneDeep(this.props);
+        if (items !== nextProps.items) {
+            // this.setPage(this.props.initialPage);
+
         }
     }
+
+
 
     setPage(page) {
-        let items = this.props.items;
-        let pager = this.state.pager;
+        let {items, onChangePage} = _.cloneDeep(this.props);
+        let {pager} = _.cloneDeep(this.state);
 
         if (page < 1 || page > pager.totalPages) {
             return;
@@ -41,9 +47,9 @@ export default class Pagination extends React.Component {
 
         let pageOfItems = items.slice(pager.startIndex, pager.endIndex + 1);
 
-        this.setState({ pager: pager });
+        this.setState({pager: pager});
 
-        this.props.onChangePage(pageOfItems, pager.currentPage);
+        onChangePage(pageOfItems, pager.currentPage);
     }
 
     getPager = (totalItems, currentPage, pageSize) => {
@@ -87,8 +93,8 @@ export default class Pagination extends React.Component {
     }
 
     render() {
-        let pager = this.state.pager;
 
+        let {pager} = _.cloneDeep(this.state);
         if (!pager.pages || pager.pages.length <= 1) {
             return null;
         }
@@ -117,12 +123,12 @@ export default class Pagination extends React.Component {
                 )}
                 <li className={checkTotalPage}
                     style={{cursor: styleTotalPage}}>
-                    <a  onClick={() => this.setPage(pager.currentPage + 1)}>Next</a>
+                    <a onClick={() => this.setPage(pager.currentPage + 1)}>Next</a>
                 </li>
                 <li
                     className={checkTotalPage}
                     style={{cursor: styleTotalPage}}>
-                    <a  onClick={() => this.setPage(pager.totalPages)}>Last</a>
+                    <a onClick={() => this.setPage(pager.totalPages)}>Last</a>
                 </li>
             </ul>
         );

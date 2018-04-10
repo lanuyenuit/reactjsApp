@@ -295,9 +295,11 @@ export default class App extends React.Component {
 
 
     render() {
+
         let {clickAddBook, clickEditBook, clickSearchBook, book,
             books, resultIDs
             } = _.clone(this.state);
+        console.log('books.length > 0 &&',books);
         return (
             <div className="wrapper">
                 <header className="main-header">
