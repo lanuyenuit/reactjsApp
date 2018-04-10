@@ -22,8 +22,8 @@ export default class ModalAddBook extends React.Component {
     };
 
     renderRows = () => {
-        let {books, resultIDs} = _.cloneDeep(this.props);
-        let {booksSearch, pageOfItems} = _.cloneDeep(this.state);
+        let {resultIDs} = _.cloneDeep(this.props);
+        let {pageOfItems, currentPage} = _.cloneDeep(this.state);
         let booksFound = [];
 
         let result = _.map(pageOfItems, (book, i) => {
@@ -32,15 +32,15 @@ export default class ModalAddBook extends React.Component {
                 booksFound.push(book);
                 return (
                     <tr key={i}>
-                        <td>{++i}</td>
+                        <td>{(10*(currentPage-1) +i+1)}</td>
                         <td>{book.title}</td>
                         <td>{book.author}</td>
                     </tr>
                 )
             }
         });
-        return result
-    }
+        return result;
+    };
 
     componentDidMount() {
         let {books, resultIDs} = _.cloneDeep(this.props);
@@ -72,10 +72,7 @@ export default class ModalAddBook extends React.Component {
                                 <span aria-hidden="true">×</span></button>
                             <h4 className="modal-title">Result</h4>
                         </div>
-                        {
-                            booksSearch.length > 0 &&
-                            <Pagination items={booksSearch} onChangePage={this.onChangePage} />
-                        }
+
                         <div className="modal-body">
 
                             <div className="col-sm-12">
@@ -108,6 +105,10 @@ export default class ModalAddBook extends React.Component {
                             </div>
                         </div>
                         <div className="modal-footer" style={{borderTop: 'none'}}>
+                            {
+                                booksSearch.length > 0 &&
+                                <Pagination items={booksSearch} onChangePage={this.onChangePage} />
+                            }
                             <button type="button"
                                     className="btn btn-primary"
                                     onClick={() => (closeModal('clickSearchBook'))}>
