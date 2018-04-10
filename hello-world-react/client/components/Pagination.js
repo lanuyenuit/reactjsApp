@@ -93,23 +93,35 @@ export default class Pagination extends React.Component {
             return null;
         }
 
+        let checkCurrentPageDisabled = pager.currentPage === 1 ? 'disabled' : '';
+        let styleCurrentPage = pager.currentPage === 1 ? '' : 'pointer';
+        let checkTotalPage = pager.currentPage === pager.totalPages ? 'disabled' : '';
+        let styleTotalPage = pager.currentPage === pager.totalPages ? '' : 'pointer';
+
         return (
             <ul className="pagination">
-                <li className={pager.currentPage === 1 ? 'disabled' : ''}>
-                    <a  onClick={() => this.setPage(1)}>First</a>
+                <li className={checkCurrentPageDisabled}
+                    style={{cursor: styleCurrentPage}}>
+                    <a onClick={() => this.setPage(1)}>First</a>
                 </li>
-                <li className={pager.currentPage === 1 ? 'disabled' : ''}>
+                <li className={checkCurrentPageDisabled}
+                    style={{cursor: styleCurrentPage}}>
                     <a onClick={() => this.setPage(pager.currentPage - 1)}>Previous</a>
                 </li>
                 {pager.pages.map((page, index) =>
-                    <li key={index} className={pager.currentPage === page ? 'active' : ''}>
-                        <a style={{cursor: 'pointer'}} onClick={() => this.setPage(page)}>{page}</a>
+                    <li key={index}
+                        className={pager.currentPage === page ? 'active' : '' }
+                        style={{cursor: 'pointer'}}>
+                        <a onClick={() => this.setPage(page)}>{page}</a>
                     </li>
                 )}
-                <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
+                <li className={checkTotalPage}
+                    style={{cursor: styleTotalPage}}>
                     <a  onClick={() => this.setPage(pager.currentPage + 1)}>Next</a>
                 </li>
-                <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
+                <li
+                    className={checkTotalPage}
+                    style={{cursor: styleTotalPage}}>
                     <a  onClick={() => this.setPage(pager.totalPages)}>Last</a>
                 </li>
             </ul>
