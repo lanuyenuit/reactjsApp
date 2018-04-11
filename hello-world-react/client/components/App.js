@@ -1,14 +1,17 @@
+//library
 import React from 'react';
-import Modal from './Modal.js';
 import _ from 'lodash';
-import SearchModal from './SearchModal'
 import swal from 'sweetalert';
+
+//global component
+import Modal from './Modal';
+import SearchModal from './SearchModal'
 import Pagination from './Pagination'
 
 export default class App extends React.Component {
-
     constructor(props) {
         super(props);
+
         this.state = {
             clickAddBook: false,
             clickEditBook: false,
@@ -151,15 +154,20 @@ export default class App extends React.Component {
         }
     }
 
-    onChangePage = (pageOfItems, currentPage) => {
+    onChangePage = (_pageOfItems, _currentPage) => {
         this.setState({
-            pageOfItems: pageOfItems,
-            currentPage
+            pageOfItems: _pageOfItems,
+            currentPage: _currentPage
         });
     };
 
     addBook = () => {
-        let bookInit = {id: null, title: null, author: null};
+        let bookInit = {
+            id: null,
+            title: null,
+            author: null
+        };
+
         this.setState({
             clickAddBook: true,
             book: bookInit
@@ -198,10 +206,10 @@ export default class App extends React.Component {
         if (field === 'title') {
             book.title = input;
         }
+
         if (field === 'search') {
             inputSearch = input;
-        }
-        else {
+        } else {
             book.author = input;
         }
 
@@ -232,7 +240,6 @@ export default class App extends React.Component {
     };
 
     editBook = (id) => {
-
         let {books} = _.cloneDeep(this.state);
         let book = _.find(books, ['id', id]);
 
@@ -243,7 +250,6 @@ export default class App extends React.Component {
     };
 
     saveBook = () => {
-
         let { books, book} = _.cloneDeep(this.state);
 
         if (!book.id) {
