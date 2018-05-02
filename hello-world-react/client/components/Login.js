@@ -1,12 +1,12 @@
 import React from 'react';
-import App from "./App.js";
 import _ from  'lodash';
 
-
+import App from "./App.js";
 
 export default class Login extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             user: {username: '', password: ''},
             usernameTemp:'',
@@ -17,6 +17,7 @@ export default class Login extends React.Component {
 
     handleUser = (e) => {
         let userInput = e.target.value;
+
         this.setState({usernameTemp: userInput});
     };
 
@@ -33,6 +34,7 @@ export default class Login extends React.Component {
 
     render() {
         let {toggleSignin} = _.clone(this.state);
+
         return <div>
             { !toggleSignin &&
             <div className="login-box">
@@ -85,5 +87,3 @@ export default class Login extends React.Component {
 
     }
 }
-
-

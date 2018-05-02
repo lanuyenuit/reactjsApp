@@ -161,6 +161,7 @@ export default class App extends React.Component {
         });
     };
 
+    //click Add button to add book to list books
     addBook = () => {
         let bookInit = {
             id: null,
@@ -174,10 +175,12 @@ export default class App extends React.Component {
         });
     };
 
+    //click x button or close button to close modal
     closeModal = (modalName) => {
         this.setState({[modalName]: false});
     };
 
+    // display books UI
     displayBookTable = () => {
         let {
             pageOfItems,
@@ -199,6 +202,7 @@ export default class App extends React.Component {
         })
     };
 
+    //get value at input element
     handleInput = (e, field) => {
         let {book, inputSearch} = _.cloneDeep(this.state);
         let input = e.target.value;
@@ -220,6 +224,7 @@ export default class App extends React.Component {
         });
     };
 
+    //use sweet alert to confirm DO you want delete it?
     deleteBook = (id) => {
         swal({
             title: "Are you sure?",
@@ -239,6 +244,7 @@ export default class App extends React.Component {
 
     };
 
+
     editBook = (id) => {
         let {books} = _.cloneDeep(this.state);
         let book = _.find(books, ['id', id]);
@@ -249,6 +255,7 @@ export default class App extends React.Component {
         });
     };
 
+    //click save btton in modal to save
     saveBook = () => {
         let { books, book} = _.cloneDeep(this.state);
 
@@ -276,7 +283,6 @@ export default class App extends React.Component {
     };
 
     searchBooks = () => {
-
         let result;
         let {inputSearch} = _.clone(this.state);
         let {books} = _.cloneDeep(this.state);
@@ -298,14 +304,11 @@ export default class App extends React.Component {
         });
     };
 
-
-
     render() {
-
         let {clickAddBook, clickEditBook, clickSearchBook, book,
             books, resultIDs
             } = _.clone(this.state);
-        console.log('books.length > 0 &&',books);
+
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -372,8 +375,6 @@ export default class App extends React.Component {
                                     <i className="fa fa-angle-left pull-right"/>
                                     </span>
                                 </a>
-
-
                             </li>
                             <li className="treeview menu-open">
                                 <a href="#">
@@ -397,7 +398,9 @@ export default class App extends React.Component {
                 <div className="content-wrapper" style={{minHeight: "960px"}}>
                     <div className="box">
                         <div className="box-header">
-                            <button style={{float: "left", marginRight: '10px'}} onClick={() => this.addBook()}>Add new book</button>
+                            <button style={{float: 'left', marginRight: '10px'}}
+                                    onClick={() => this.addBook()}>
+                                Add new book</button>
                             <div style={{
                                 width: '40%',
                                 float: 'right',
@@ -410,7 +413,9 @@ export default class App extends React.Component {
                                     placeholder="Search"
                                     onChange={(e)=>this.handleInput(e,'search')}
                                 />
-                                <button onClick={()=>this.searchBooks()} style={{display: 'block'}}>Search</button>
+                                <button onClick={()=>this.searchBooks()}
+                                        style={{display: 'block'}}>
+                                    Search</button>
                             </div>
 
                             {
@@ -432,8 +437,7 @@ export default class App extends React.Component {
                             }
                             {
                                 clickSearchBook &&
-                                    <SearchModal displaySearchResult={this.displaySearchResult}
-                                                 closeModal={this.closeModal}
+                                    <SearchModal closeModal={this.closeModal}
                                                  books={books}
                                                  resultIDs={resultIDs}
                                     />

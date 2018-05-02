@@ -33,8 +33,6 @@ export default class Pagination extends React.Component {
         }
     }
 
-
-
     setPage(page) {
         let {items, onChangePage} = _.cloneDeep(this.props);
         let {pager} = _.cloneDeep(this.state);
@@ -137,4 +135,3 @@ export default class Pagination extends React.Component {
 
 Pagination.propTypes = propTypes;
 Pagination.defaultProps = defaultProps;
-

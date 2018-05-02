@@ -32,7 +32,7 @@ export default class ModalAddBook extends React.Component {
                 booksFound.push(book);
                 return (
                     <tr key={i}>
-                        <td>{(10*(currentPage-1) +i+1)}</td>
+                        <td>{(10 * (currentPage - 1) + i + 1)}</td>
                         <td>{book.title}</td>
                         <td>{book.author}</td>
                     </tr>
@@ -44,13 +44,16 @@ export default class ModalAddBook extends React.Component {
 
     componentDidMount() {
         let {books, resultIDs} = _.cloneDeep(this.props);
-        let booksSearch = []
+        let booksSearch = [];
+
         _.each(books, (book, i) => {
             let checkID = _.includes(resultIDs, book.id);
+
             if (checkID) {
                 booksSearch.push(book);
             }
         });
+
         this.setState({
             booksSearch
         })
@@ -107,7 +110,7 @@ export default class ModalAddBook extends React.Component {
                         <div className="modal-footer" style={{borderTop: 'none'}}>
                             {
                                 booksSearch.length > 0 &&
-                                <Pagination items={booksSearch} onChangePage={this.onChangePage} />
+                                <Pagination items={booksSearch} onChangePage={this.onChangePage}/>
                             }
                             <button type="button"
                                     className="btn btn-primary"
@@ -117,9 +120,7 @@ export default class ModalAddBook extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>)
-
+            </div>
+        )
     }
 }
-
-

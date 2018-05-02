@@ -6,7 +6,8 @@ export default class ModalAddBook extends React.Component {
     }
 
     render() {
-        const {closeModal, handleInput, saveBook, book,books, method} = this.props;
+        const {closeModal, handleInput, saveBook, book, method} = this.props;
+
         return (
             <div className="modal fade in" id="modal-default" style={{display: "block"}}>
                 <div className="modal-dialog">
@@ -72,8 +73,11 @@ export default class ModalAddBook extends React.Component {
                             </div>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-default pull-left" data-dismiss="modal"
-                                    onClick={() =>(method==='POST' ? closeModal('clickAddBook'): closeModal('clickEditBook'))}>
+                            <button type="button"
+                                    className="btn btn-default pull-left"
+                                    data-dismiss="modal"
+                                    onClick={() =>(method==='POST' ?
+                                        closeModal('clickAddBook'): closeModal('clickEditBook'))}>
                                 Close</button>
                             <button type="button"
                                     className="btn btn-primary"
@@ -86,5 +90,3 @@ export default class ModalAddBook extends React.Component {
 
     }
 }
-
-
