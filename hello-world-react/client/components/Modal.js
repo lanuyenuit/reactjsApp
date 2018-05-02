@@ -86,7 +86,8 @@ export default class ModalAddBook extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>)
+            </div>
+        )
 
     }
 }
