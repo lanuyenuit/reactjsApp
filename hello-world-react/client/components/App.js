@@ -239,6 +239,7 @@ export default class App extends React.Component {
                         return books.id !== id
                     });
                     this.setState({books: newBooks});
+                    this.displayBookTable()
                 }
             });
 

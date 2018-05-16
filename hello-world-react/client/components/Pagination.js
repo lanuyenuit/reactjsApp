@@ -18,11 +18,21 @@ export default class Pagination extends React.Component {
         this.state = {pager: {}};
     }
 
-    componentWillMount() {
-        let {items, initialPage} = _.cloneDeep(this.props);
+    initPage(props){
+        let {items, initialPage} = _.cloneDeep(props);
         if (items && items.length) {
-            this.setPage(initialPage);
+            this.setPage(initialPage, props);
         }
+    }
+
+    componentWillReceiveProps(nextProps){
+        if(nextProps.items.length != this.props.items.length){
+            this.initPage(nextProps)
+        }
+    }
+
+    componentWillMount() {
+        this.initPage(this.props)
     }
 
     componentWillUpdate(nextProps, nextState) {
@@ -33,8 +43,8 @@ export default class Pagination extends React.Component {
         }
     }
 
-    setPage(page) {
-        let {items, onChangePage} = _.cloneDeep(this.props);
+    setPage(page, props = this.props) {
+        let {items, onChangePage} = _.cloneDeep(props);
         let {pager} = _.cloneDeep(this.state);
 
         if (page < 1 || page > pager.totalPages) {

@@ -64,8 +64,8 @@ export default class ModalAddBook extends React.Component {
                                                    onChange={(e)=>handleInput(e, 'author')}/>
                                         </td>
                                         <td style={{width: '14%'}}>
-                                            <button><i className="fa fa-edit"></i></button>
-                                            <button><i className="fa fa-ban"></i></button>
+                                            <button><i className="fa fa-edit"/></button>
+                                            <button><i className="fa fa-ban"/></button>
                                         </td>
                                     </tr>
                                     </tbody>
