@@ -1,9 +1,12 @@
 import React from 'react';
 import _ from 'lodash';
 
+import {connect} from 'react-redux'
+
+
 import Pagination from './Pagination';
 
-export default class ModalAddBook extends React.Component {
+class ModalAddBook extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -63,6 +66,7 @@ export default class ModalAddBook extends React.Component {
     render() {
         const {closeModal} = this.props;
         let {booksSearch} = _.cloneDeep(this.state);
+        console.log('bbooks',this.props.books)
         return (
             <div className="modal fade in" id="modal-default" style={{display: "block"}}>
                 <div className="modal-dialog">
@@ -125,3 +129,13 @@ export default class ModalAddBook extends React.Component {
         )
     }
 }
+
+
+const mapStateToProps = (state) => {
+    return {
+        books: state.books
+    }
+
+}
+
+export default connect(mapStateToProps, null)(ModalAddBook)

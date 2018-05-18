@@ -7,6 +7,7 @@ import swal from 'sweetalert';
 import Modal from './Modal';
 import SearchModal from './SearchModal'
 import Pagination from './Pagination'
+import demo from '../trainning/demo'
 
 export default class App extends React.Component {
     constructor(props) {
@@ -219,8 +220,7 @@ export default class App extends React.Component {
 
         this.setState({
             book,
-            inputSearch,
-            newbook: book
+            inputSearch
         });
     };
 
@@ -438,8 +438,10 @@ export default class App extends React.Component {
                             }
                             {
                                 clickSearchBook &&
-                                    <SearchModal closeModal={this.closeModal}
-                                                 books={books}
+                                    <SearchModal
+                                                 closeModal={this.closeModal}
+                                                 // books={books}
+
                                                  resultIDs={resultIDs}
                                     />
                             }
