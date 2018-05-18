@@ -2,455 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b9f90fd-955b-4d6a-83bc-1f0afd7548ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/dist/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/avatar04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/avatar2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/avatar3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/avatar5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/boxed-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/boxed-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/credit/american-express.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/credit/cirrus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/credit/mastercard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/credit/mestro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/credit/paypal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/credit/paypal2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/credit/visa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/default-50x50.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/photo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/photo2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/photo3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/photo4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/img/user1-128x128.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ReactJS.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/.idea/hello-world-react.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/client/components/App.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/client/css/vendors/AdminLTE.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/client/css/vendors/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/client/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/client/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/JSONStream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/JSONStream.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/acorn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/acorn.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/ansi-html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/ansi-html.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/atob" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/atob.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/babylon" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/babylon.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/browser-pack" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/browser-pack.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/browserify" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/browserify.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/browserslist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/browserslist.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/cssesc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/cssesc.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/csso" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/csso.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/deps-sort" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/deps-sort.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/detective" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/detective.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/errno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/errno.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/esparse" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/esparse.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/esvalidate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/esvalidate.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/glob-all" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/glob-all.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/he" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/he.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/html-minifier" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/html-minifier.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/import-local-fixture" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/import-local-fixture.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/insert-module-globals" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/insert-module-globals.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/internal-ip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/internal-ip.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/js-yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/js-yaml.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/jscodeshift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/jscodeshift.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/jsesc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/jsesc.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/json2yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/json2yaml.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/json5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/json5.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/loose-envify" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/loose-envify.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/miller-rabin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/miller-rabin.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/mime" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/mime.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/mkdirp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/mkdirp.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/module-deps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/module-deps.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/multicast-dns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/multicast-dns.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/prettier" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/prettier.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/regjsparser" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/regjsparser.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/rimraf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/rimraf.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/semver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/semver.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/sha.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/sha.js.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/shjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/shjs.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/strip-indent" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/strip-indent.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/svgo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/svgo.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/uglifyjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/uglifyjs.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/umd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/umd.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/uuid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/uuid.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/webpack" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/webpack-cli" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/webpack-cli.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/webpack-dev-server" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/webpack-dev-server.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/webpack.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/which" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/which.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/yaml2json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.bin/yaml2json.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/07/72/099915d52e08e52bc8760d021eb87ae541430306fe23e7f2c22cf4223dc9b29f254343b1008844c304ee8d9167495a3000f06043417fac8c35f1a4d50d89" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/0c/08/aa341f743dad2b638895baf7f7d92de4dbe303325abe15e7105cf550dbd525056543ee4a864c660cbb5eef0386e6aa6065c9ffcc9d6520b6d9dfa4a5bbae" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/14/18/41675ae5e1437be1bf4054293c9d82306a4d73ce7e4bc3aca340f08fa834cb7e54d15951bf8df58c48054c6a08abeb3530483837560c4c150086b336c5d3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/2d/6f/3d454d1bb6defeae9a804bf0ecbf644d912d9d930b72c818191968897f54160fe638c40f83011042dccd26257f5aaea5510f123f0438eebe3211bf8f20bc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/3a/e6/2a09620779e9cb09f1020674673143359716d81d4ed5912e16f022c4d51c11d6880ad8450f623f6e5ba01eb07c2e33d2941db8b075f154d7ae2afe08fcc0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/48/bb/fa7ac9f36e8bc9ac466e68368433c2c7b593af88fc5e40a382e1ff334f2967ea27a534e9fc32c4c6f2e59d0cc6d00e5cba703100351e76f02680c56ed9c4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/64/9a/6bcf13d1466b8840c428d0d5217ff9e2ca5dbe605ec7e76e8b0d56f5a9614f71c1a8960cb5d30a0e5afe278326c817f298f1c13ddce7d851f1c82d320d9c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/6a/6c/5ecfdf7711e8d5b5f8964de5970985b0d2a42adc88d6f144f5b7a1785f487b441b69646f0f4f1cbe1aace26f7dc9ee06414e8f0fc0085a3479c5c10ccbfa" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/79/32/6322c11ae47eb3a396d27c5020cf8556eac88900fd90b9d471aa502310cf85b6a8035c1043c6b4543f35428361f2522bfcde6378dafc24736c9923ad17ed" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/9a/35/bdb8458738d9eb404c52fe8f42e68757b6c6529746bf71d7386c86f0eb6fff2e41154c9b7868004acc2430cda97fc798ad9b3221474fc1af6fa4ea9d5cb0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/9e/cf/d649382f09505bf5c074d78c62a86695492bcc9854a99b1f515ff43921de68fc5473455e339549d9931ad79acc4d93be3a29147fbfbde5a2c0b79156e058" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/a7/5e/f6a3e87d0b60ee75168c0fb5959e925d7359fa43b839734e0790519de4d889b35a74343a3203d5028df98c5ab7290bf8fadc5722ccff306807bb0d4beb1b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/ad/df/fb7d80732b31136cae79049b48eda0c18ba47b05ec885a196e592d0cdb4984fa6a8180ca9209f21fec3d69b2977ff64bb7752ed62dffae13ce68ee517b66" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/d7/18/4c308c950a3b818b953351713a1bc70ed692202c3b22f14e96db13b11a5d93e21530d3d596c031eefdf6e5fbe9e77ec3f54c1b16653d76d3c65218e718ef" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/dc/47/a05b544ffb7beb49a0b5242c2ea97cecad67224f0fb1294ca2f85da70ac3b42aba02527a5a2c60ba457cbc6632f527a074db5ebd9051a5eea000e5cefc39" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/e2/f2/a8ef28c5da4cfab2ec275b8ed7e25f8ca3deda565f092e883d1db905f406c8d568b1e09ff0aaa86198b251ee7cccbcb972bbf7e4feb466576f43d22d570a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/e3/a0/650f5a156b92eb5a60be9c118fbf7c5c0f573330da2bb89a6ecb8d665b0d69f8d31e9e377d76f5f5148fb35f49ca5f330f19414c9cac9127c6b1c6a71475" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/1f/8e/2704b9a165804dd9daf42bf8c5e0dc01093e5c7f949edc601f9d287e1cca" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/22/b5/709fc0e6bc345447c1dbeafa832b6304175298353d6a6e2f1f77bb7e4019" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/24/a5/ffbea50c1077f056725840627d67b1f3bd40240e253825ea724b03698baf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/26/ad/1eaf31770c0ebedb17b8655f60a47759eee9f2511fbacbe801029f8aceec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/28/53/7521d5e8508ac8cd8dbf6766afc3c4264d064b823025d00eba5644d14ee6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/36/30/a4a447092162e84d4680839133c5911879e24364effb5f353c04a26930d2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/3e/91/a7a5fb46914828af65de19f9d9335ee2c267a01a2d5344ffeb54594e57fa" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/67/62/5394593a439a7478a840779cc83f750885304a62d51709bd441fb175d321" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/71/89/30f09db782eaae33d38ea2b59b1edcd6596acb61ce919501fc0b17a4bd42" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/80/f4/f68ccac8066d8cd0294cc1167f3e69103aa28d165c2dc9fe874ab659f58f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/9c/bb/d154545841f6a876cca7018fa579ccb731d6c53e63d931e82853c355525c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/a1/3c/bdfcc015ed354e04682e5eb0f8dc1a5e9e3d0fbfbcd5a8a7091663ef7703" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/a2/79/6b24626feb53c2a98dac15e489e765cfc614d911a0a734b633ff4045d1b6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/a6/61/c6b526c6d50ca7faa1cc78aaf0f4296c20e806de8fbcac5427d3d066e40d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/bf/7c/1a41f92dec3d28a795c9560e854ecd9debcc6be5705615c1024ea8a774d8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/c1/26/70bce3d48f544cbd3b25311015d5a394a90a9692db816dd4a7ea4f16413b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/d4/67/1b53e3b0f806729860491ff2ae2e0696684c9aa18b734acdbdb410efe502" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/e5/1f/5738681c5b57bb4e20e9f3059a7796def7fdf9f98cc24432394b50b50976" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/f4/07/c0e95331c4f909c12aee0cec64d0bde652dc2531c73ee8dd3d9ae647929d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/.yarn-integrity" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/example.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/example.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/index.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/source/index.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/source/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/source/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/source/tests/test.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/source/tests/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/dist/source/tests/test.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/@sindresorhus/is/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/LICENSE.APACHE2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/LICENSE.MIT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/bin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/examples/all_docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/bool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/destroy_missing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/disabled/doubledot1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/disabled/doubledot2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/empty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/error_contents.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/fixtures/all_npm.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/fixtures/couch_sample.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/fixtures/depth.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/fixtures/error.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/fixtures/header_footer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/fn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/gen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/header_footer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/issues.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/keys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/multiple_objects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/multiple_objects_error.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/null.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/parsejson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/stringify_object.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/test2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/JSONStream/test/two-ways.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/accepts/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/accepts/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/accepts/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/accepts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/accepts/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/lib/inject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/lib/walk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/node_modules/.bin/acorn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/node_modules/.bin/acorn.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/src/inject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-dynamic-import/src/walk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/node_modules/.bin/acorn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/node_modules/.bin/acorn.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn-node/walk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/bin/_acorn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/bin/acorn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/bin/run_test262.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/bin/test262.whitelist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/dist/acorn.es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/dist/acorn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/dist/acorn_loose.es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/dist/acorn_loose.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/dist/walk.es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/dist/walk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/acorn/yarn-error.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/.github/ISSUE_TEMPLATE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/.csscomb.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/.csslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/badges.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/breadcrumbs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/button-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/carousel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/close.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/code.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/component-animations.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/dropdowns.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/glyphicons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/input-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/jumbotron.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/media.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/background-variant.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/border-radius.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/center-block.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/clearfix.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/gradients.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/grid-framework.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/hide-text.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/image.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/nav-divider.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/nav-vertical-align.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/opacity.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/progress-bar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/reset-filter.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/reset-text.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/resize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/responsive-visibility.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/size.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/tab-focus.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/table-row.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/text-emphasis.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/text-overflow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/mixins/vendor-prefixes.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/modals.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/navbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/normalize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/pager.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/popovers.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/progress-bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/responsive-embed.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/responsive-utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/scaffolding.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/tables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/thumbnails.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/tooltip.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/type.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/bootstrap-less/wells.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/grunt/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/.jscsrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/BoxRefresh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/BoxWidget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/ControlSidebar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/DirectChat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/Layout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/PushMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/TodoList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/js/Tree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/.csslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/404_500_errors.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/AdminLTE-without-plugins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/AdminLTE.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/bootstrap-social.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/boxes.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/callout.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/carousel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/control-sidebar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/datepicker.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/direct-chat.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/dropdown.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/fullcalendar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/header.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/info-box.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/invoice.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/lockscreen.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/login_and_register.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/mailbox.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/miscellaneous.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/modal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/plugins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/products.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/profile.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/progress-bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/select2.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/sidebar-mini.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/sidebar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/_all-skins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-black-light.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-black.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-blue-light.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-blue.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-green-light.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-green.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-purple-light.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-purple.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-red-light.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-red.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-yellow-light.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/skins/skin-yellow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/small-box.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/social-widgets.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/table.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/timeline.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/treeview.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/users-list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/build/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/changelog.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/AdminLTE.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/AdminLTE.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/adminlte.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/adminlte.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-bootstrap-social.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-bootstrap-social.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-fullcalendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-fullcalendar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-select2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-select2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-without-plugins.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/alt/AdminLTE-without-plugins.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/_all-skins.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/_all-skins.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-black-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-black-light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-black.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-black.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-blue-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-blue-light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-blue.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-green-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-green-light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-green.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-purple-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-purple-light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-purple.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-red-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-red-light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-red.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-yellow-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-yellow-light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-world-react/node_modules/admin-lte/dist/css/skins/skin-yellow.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello-world-react/client/components/App.js" afterPath="$PROJECT_DIR$/hello-world-react/client/components/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello-world-react/client/components/SearchModal.js" afterPath="$PROJECT_DIR$/hello-world-react/client/components/SearchModal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello-world-react/client/index.js" afterPath="$PROJECT_DIR$/hello-world-react/client/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello-world-react/package-lock.json" afterPath="$PROJECT_DIR$/hello-world-react/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello-world-react/package.json" afterPath="$PROJECT_DIR$/hello-world-react/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -470,22 +29,47 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello-world-react/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
+            <state relative-caret-position="307">
               <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello-world-react/client/index.js">
+      <file leaf-file-name="books.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hello-world-react/client/reducers/books.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+              <folding>
+                <element signature="e#72#2256#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="145" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#550#4246#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchModal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/SearchModal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1160">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -493,36 +77,93 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/App.jsx">
+      <file leaf-file-name="ActionTypes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-world-react/client/constants/ActionTypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="20">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hello-world-react/package.json">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-world-react/client/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-445">
+            <state relative-caret-position="100">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/Modal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-world-react/client/reducers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>booksS</find>
+      <find>B</find>
+      <find>BO</find>
+      <find>BOO</find>
+      <find>BOOKS</find>
+      <find>books</find>
+      <find>Sea</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hello-world-react/package.json" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/trainning/constants/ActionTypes.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/trainning/action/index.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/trainning/demo.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/trainning/reducers/status.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/trainning/reducers/index.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/trainning/reducers/sort.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/index.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/reducers/book.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/constants/ActionTypes.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/actions/index.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/reducers/index.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/components/App.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/components/SearchModal.js" />
+        <option value="$PROJECT_DIR$/hello-world-react/client/reducers/books.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/hello-world-react/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -545,6 +186,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -608,13 +250,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="reducers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReactJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReactJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hello-world-react" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReactJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReactJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hello-world-react" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -636,7 +321,64 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -651,31 +393,33 @@
       <option name="presentableId" value="Default" />
       <updated>1521791863867</updated>
       <workItem from="1521791873370" duration="469000" />
+      <workItem from="1526531489149" duration="546000" />
+      <workItem from="1526609664167" duration="14206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469000" />
+    <option name="totallyTimeSpent" value="15221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.198036" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -692,7 +436,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello-world-react/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state relative-caret-position="560">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
@@ -708,19 +452,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/App.jsx">
+    <entry file="file://$PROJECT_DIR$/hello-world-react/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="260">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/App.jsx" />
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/Pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1340">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/trainning/constants/ActionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/trainning/action/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/trainning/reducers/status.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hello-world-react/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-445">
+        <state relative-caret-position="380">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/trainning/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#33#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/trainning/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#29#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/trainning/reducers/sort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/SearchModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="145" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#550#4246#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/components/Modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/constants/ActionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-react/client/reducers/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <element signature="e#72#2256#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

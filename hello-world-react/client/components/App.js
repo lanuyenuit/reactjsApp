@@ -4,6 +4,7 @@ import _ from 'lodash';
 import SearchModal from './SearchModal'
 import swal from 'sweetalert';
 import Pagination from './Pagination'
+import demo from '../trainning/demo'
 
 export default class App extends React.Component {
 
@@ -299,7 +300,6 @@ export default class App extends React.Component {
         let {clickAddBook, clickEditBook, clickSearchBook, book,
             books, resultIDs
             } = _.clone(this.state);
-        console.log('books.length > 0 &&',books);
         return (
             <div className="wrapper">
                 <header className="main-header">
@@ -426,9 +426,9 @@ export default class App extends React.Component {
                             }
                             {
                                 clickSearchBook &&
-                                    <SearchModal displaySearchResult={this.displaySearchResult}
+                                    <SearchModal
                                                  closeModal={this.closeModal}
-                                                 books={books}
+                                                 // books={books}
                                                  resultIDs={resultIDs}
                                     />
                             }

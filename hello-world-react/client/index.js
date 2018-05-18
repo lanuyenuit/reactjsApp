@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './components/App.jsx';
-import Login from './components/Login.js';
+import {createStore} from 'redux';
+import myReducer from './reducers/index';
+import {Provider} from 'react-redux'
+import Login from './components/Login';
+
+const store = createStore(myReducer)
 
 
-
-ReactDOM.render(<Login/>, document.getElementById('root'));
+ReactDOM.render(
+    <Provider store={store}>
+        <Login/>
+    </Provider>,
+    document.getElementById('root'));
 
 
